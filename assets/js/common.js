@@ -19,11 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
   injectCompareDrawer();
 
   // 2. SETUP LISTENERS FOR REALTIME BADGE UPDATES
-  window.addEventListener('drivex:favorites-updated', (e) => {
+  window.addEventListener('PD Cars:favorites-updated', (e) => {
     updateBadges();
   });
 
-  window.addEventListener('drivex:compare-updated', (e) => {
+  window.addEventListener('PD Cars:compare-updated', (e) => {
     updateBadges();
     renderCompareDrawer();
   });
@@ -54,7 +54,7 @@ function injectHeader() {
             <div class="w-10 h-10 rounded-xl bg-brand-600 flex items-center justify-center font-bold text-white group-hover:bg-brand-500 transition duration-300">
               DX
             </div>
-            <span class="font-black text-2xl tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-400">DriveX</span>
+            <span class="font-black text-2xl tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-400">PD Cars</span>
           </a>
 
           <!-- Navigation Links -->
@@ -139,7 +139,7 @@ function injectFooter() {
               <div class="w-10 h-10 rounded-xl bg-brand-600 flex items-center justify-center font-bold text-white">
                 DX
               </div>
-              <span class="font-black text-2xl text-white tracking-wider">DriveX</span>
+              <span class="font-black text-2xl text-white tracking-wider">PD Cars</span>
             </div>
             <p class="text-sm text-zinc-500 leading-relaxed">
               Premium automotive digital magazine and luxury vehicle discovery ecosystem. Your portal to high performance, EV innovations, and industry research.
@@ -169,7 +169,7 @@ function injectFooter() {
           <div>
             <h4 class="text-white font-bold mb-6 tracking-wide">Contact</h4>
             <div class="flex flex-col gap-3.5 text-sm text-zinc-500">
-              <p>Email: contact@drivex.com</p>
+              <p>Email: contact@PD Cars.com</p>
               <p>Phone: +1-555-123-4567</p>
               <p>Office: Automotive Avenue, New York, USA</p>
             </div>
@@ -178,7 +178,7 @@ function injectFooter() {
         </div>
 
         <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-zinc-600">
-          <p>&copy; ${new Date().getFullYear()} DriveX Automotive. All rights reserved.</p>
+          <p>&copy; ${new Date().getFullYear()} PD Cars Automotive. All rights reserved.</p>
           <div class="flex gap-6">
             <a href="#" class="hover:text-zinc-400">Privacy Policy</a>
             <a href="#" class="hover:text-zinc-400">Terms of Service</a>
@@ -306,7 +306,7 @@ function setupNewsletter() {
       
       const email = input.value.trim();
       if (email.includes('@')) {
-        alert(`Thank you for subscribing, ${email}! You've been signed up for DriveX updates.`);
+        alert(`Thank you for subscribing, ${email}! You've been signed up for PD Cars updates.`);
         input.value = '';
       } else {
         alert('Please enter a valid email address.');

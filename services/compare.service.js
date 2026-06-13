@@ -1,4 +1,4 @@
-const STORAGE_KEY = 'drivex_compare';
+const STORAGE_KEY = 'pdcars_compare';
 
 export const CompareService = {
   getCompareList() {
@@ -52,7 +52,7 @@ export const CompareService = {
   },
 
   _dispatchEvent() {
-    window.dispatchEvent(new CustomEvent('drivex:compare-updated', {
+    window.dispatchEvent(new CustomEvent('pdcars:compare-updated', {
       detail: { count: this.getCompareList().length }
     }));
   }

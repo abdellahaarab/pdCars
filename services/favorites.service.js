@@ -1,4 +1,4 @@
-const STORAGE_KEY = 'drivex_favorites';
+const STORAGE_KEY = 'pdcars_favorites';
 
 export const FavoriteService = {
   getFavorites() {
@@ -42,7 +42,7 @@ export const FavoriteService = {
   },
 
   _dispatchEvent() {
-    window.dispatchEvent(new CustomEvent('drivex:favorites-updated', {
+    window.dispatchEvent(new CustomEvent('pdcars:favorites-updated', {
       detail: { count: this.getFavorites().length }
     }));
   }

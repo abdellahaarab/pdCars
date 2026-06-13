@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brand Profiles - DriveX</title>
+  <title>Brand Profiles - PD Cars</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -90,7 +90,7 @@
         <div class="space-y-8">
           <div>
             <h3 class="font-black text-2xl text-white tracking-tight">Vehicles from this Manufacturer</h3>
-            <p class="text-zinc-500 text-sm mt-1">Browse luxury and performance catalogs configured in DriveX.</p>
+            <p class="text-zinc-500 text-sm mt-1">Browse luxury and performance catalogs configured in PD Cars.</p>
           </div>
 
           <!-- Cars grid -->
@@ -137,7 +137,7 @@
         document.getElementById('brand-description').textContent = brand.description;
         document.getElementById('brand-logo-txt').textContent = brand.name.substring(0, 2).toUpperCase();
 
-        document.title = `${brand.name} | Manufacturer Profile | DriveX`;
+        document.title = `${brand.name} | Manufacturer Profile | PD Cars`;
 
         // 2. QUERY MATCHING VEHICLES
         const allCars = await CarService.getAllCars();

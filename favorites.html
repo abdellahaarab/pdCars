@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saved Garage - DriveX</title>
+  <title>Saved Garage - PD Cars</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -40,7 +40,7 @@
       
       <!-- HEADER TITLE -->
       <div class="mb-12">
-        <p class="text-brand-500 font-semibold mb-1 uppercase tracking-wider text-xs">DriveX Garage</p>
+        <p class="text-brand-500 font-semibold mb-1 uppercase tracking-wider text-xs">PD Cars Garage</p>
         <h1 class="text-4xl font-black text-white tracking-tight">Saved Vehicles</h1>
         <p class="text-zinc-500 text-sm mt-1">Review saved configurations and compare specifications.</p>
       </div>
@@ -70,7 +70,7 @@
       renderFavorites();
 
       // Listen for updates from drawer or other modules
-      window.addEventListener('drivex:favorites-updated', () => {
+      window.addEventListener('PD Cars:favorites-updated', () => {
         renderFavorites();
       });
     });

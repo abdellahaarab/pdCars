@@ -1,6 +1,6 @@
-# 🚗 DriveX - Premium Cars Web App
+# 🚗 PD Cars - Premium Cars Web App
 
-DriveX is a modern automotive web interface for exploring premium cars, brands, articles, reviews, and news. Built with **HTML + Tailwind CSS + Vanilla JavaScript**, and designed to be fully compatible with future external APIs.
+PD Cars is a modern automotive web interface for exploring premium cars, brands, articles, reviews, and news. Built with **HTML + Tailwind CSS + Vanilla JavaScript**, and designed to be fully compatible with future external APIs.
 
 ---
 

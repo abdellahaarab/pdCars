@@ -1,17 +1,17 @@
 {
   "site": {
-    "name": "DriveX",
+    "name": "PD Cars",
     "tagline": "Premium Cars • Reviews • News • Articles",
     "description": "Discover luxury vehicles, electric innovations, performance reviews, industry news, and premium automotive articles from around the world.",
     "logo": "DX",
-    "email": "contact@drivex.com",
+    "email": "contact@PD Cars.com",
     "phone": "+1-555-123-4567",
     "address": "Automotive Avenue, New York, USA",
     "socials": {
-      "facebook": "https://facebook.com/drivex",
-      "instagram": "https://instagram.com/drivex",
-      "x": "https://x.com/drivex",
-      "youtube": "https://youtube.com/@drivex"
+      "facebook": "https://facebook.com/PD Cars",
+      "instagram": "https://instagram.com/PD Cars",
+      "x": "https://x.com/PD Cars",
+      "youtube": "https://youtube.com/@PD Cars"
     }
   },
 
@@ -334,7 +334,7 @@
   ],
 
   "seo": {
-    "title": "DriveX - Premium Cars & Automotive Articles",
+    "title": "PD Cars - Premium Cars & Automotive Articles",
     "description": "Luxury cars, electric vehicles, supercars, automotive reviews, industry news, and expert buying guides.",
     "keywords": [
       "cars",
