@@ -48,8 +48,7 @@ This project is designed to easily connect with external APIs in the future with
 
 ## 🎥 Watch Demo
 
-👉 Watch the full web app demo on YouTube:  
-https://www.youtube.com/
+👉[Watch the full web app demo on YouTube](https://youtu.be/eaQ1qSiWrxM?si=LQsGOJOaLcojhePL)
 
 ---
 
