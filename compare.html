@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Comparison - DriveX</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f5f7ff',
+              100: '#e9eeff',
+              200: '#cfd9ff',
+              300: '#a7b8ff',
+              400: '#7a8fff',
+              500: '#5669ff',
+              600: '#3947f5',
+              700: '#2f38d7',
+              800: '#2830ae',
+              900: '#252d89'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+<body class="text-white selection:bg-brand-500 selection:text-white min-h-screen flex flex-col">
+
+  <!-- HEADER -->
+  <div id="header-container"></div>
+
+  <!-- COMPARISON SHIELD -->
+  <main class="flex-grow pt-24 pb-16">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <!-- HEADER TITLE -->
+      <div class="mb-12 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-6">
+        <div>
+          <p class="text-brand-500 font-semibold mb-1 uppercase tracking-wider text-xs">Comparison Matrix</p>
+          <h1 class="text-4xl font-black text-white tracking-tight">Compare Vehicles</h1>
+          <p class="text-zinc-500 text-sm mt-1">Side-by-side performance, metrics, and price analysis.</p>
+        </div>
+        
+        <button id="clear-all-compare-btn" class="hidden sm:inline-flex px-5 py-3 rounded-xl border border-white/10 hover:bg-white/5 hover:text-white transition font-bold text-xs text-zinc-400">
+          Clear Comparison Matrix
+        </button>
+      </div>
+
+      <!-- MATRIX CONTAINER -->
+      <div id="comparison-matrix-container" class="overflow-x-auto w-full">
+        <!-- Loaded dynamically -->
+        <div class="glass border border-white/10 rounded-[32px] h-[500px] animate-pulse"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <div id="footer-container"></div>
+
+  <!-- SCRIPTS -->
+  <script type="module" src="/assets/js/common.js"></script>
+  <script type="module">
+    import { CompareService } from './services/compare.service.js';
+    import { CarService } from './services/cars.service.js';
+    import { formatPrice, getRatingStars } from './assets/js/utils.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderCompareMatrix();
+
+      document.getElementById('clear-all-compare-btn').addEventListener('click', () => {
+        CompareService.clearCompare();
+        renderCompareMatrix();
+      });
+
+      // Update in real-time if drawer removes an item
+      window.addEventListener('drivex:compare-updated', () => {
+        renderCompareMatrix();
+      });
+    });
+
+    async function renderCompareMatrix() {
+      const container = document.getElementById('comparison-matrix-container');
+      const clearBtn = document.getElementById('clear-all-compare-btn');
+      const compareIds = CompareService.getCompareList();
+
+      if (compareIds.length === 0) {
+        clearBtn.classList.add('hidden');
+        container.innerHTML = `
+          <div class="py-20 text-center glass border border-white/5 rounded-[32px] max-w-lg mx-auto">
+            <div class="w-16 h-16 rounded-2xl bg-brand-600/10 border border-brand-500/20 text-brand-400 flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z"></path>
+              </svg>
+            </div>
+            <h3 class="font-black text-white text-xl">No cars selected to compare</h3>
+            <p class="text-zinc-500 text-sm mt-2 max-w-xs mx-auto leading-relaxed">
+              Select up to 4 models from the catalog page using the comparison buttons to analyze them side-by-side.
+            </p>
+            <a href="cars.html" class="inline-block mt-8 px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-500 font-bold text-xs transition shadow-lg shadow-brand-600/20">
+              Go to Inventory Catalog
+            </a>
+          </div>
+        `;
+        return;
+      }
+
+      clearBtn.classList.remove('hidden');
+      container.innerHTML = `
+        <div class="py-12 flex flex-col items-center justify-center">
+          <div class="loader-spinner mb-4"></div>
+          <p class="text-zinc-500 text-sm">Constructing specification matrix...</p>
+        </div>
+      `;
+
+      try {
+        const carPromises = compareIds.map(id => CarService.getCarById(id));
+        const cars = (await Promise.all(carPromises)).filter(c => c);
+
+        if (cars.length === 0) {
+          container.innerHTML = '<p class="text-center text-zinc-500">Failed to load compared cars.</p>';
+          return;
+        }
+
+        // Generate dynamic table columns: Specs label + Car 1, Car 2, Car 3, Car 4
+        // Dimensions to compare
+        const rowData = [
+          { label: 'Brand', value: car => car.brand },
+          { label: 'Category', value: car => car.category },
+          { label: 'Price', value: car => `<strong class="text-brand-400 font-black">${formatPrice(car.price)}</strong>` },
+          { label: 'Rating', value: car => getRatingStars(car.rating) },
+          { label: 'Horsepower', value: car => `<strong>${car.horsepower} HP</strong>` },
+          { label: '0-100 km/h', value: car => `<strong>${car.acceleration}s</strong>` },
+          { label: 'Top Speed', value: car => `${car.topSpeed} km/h` },
+          { label: 'Range', value: car => car.rangeKm ? `${car.rangeKm} km` : 'N/A' },
+          { label: 'Fuel Type', value: car => car.fuelType },
+          { label: 'Transmission', value: car => car.transmission },
+          { label: 'Drivetrain', value: car => car.specifications.drivetrain },
+          { label: 'Seating Capacity', value: car => car.specifications.seatingCapacity },
+          { label: 'Luggage Capacity', value: car => car.specifications.luggageCapacity },
+          { label: 'Curb Weight', value: car => car.specifications.weight },
+          { label: 'Warranty', value: car => car.specifications.warranty }
+        ];
+
+        let tableHtml = `
+          <table class="w-full text-sm text-left border-collapse min-w-[700px] glass border border-white/10 rounded-[24px]">
+            <thead>
+              <tr class="border-b border-white/10 bg-white/[0.01]">
+                <th class="px-6 py-8 font-black uppercase text-xs tracking-wider text-zinc-400 w-1/5">Specification</th>
+                ${cars.map(car => `
+                  <th class="px-6 py-8 relative w-1/5 min-w-[200px]">
+                    <button class="remove-compare-col absolute top-4 right-4 text-zinc-500 hover:text-white text-lg transition" 
+                            data-id="${car.id}" title="Remove car">&times;</button>
+                    <div class="space-y-4">
+                      <div class="aspect-[16/10] overflow-hidden rounded-2xl border border-white/5 bg-zinc-950">
+                        <img src="${car.images[0]}" class="w-full h-full object-cover">
+                      </div>
+                      <div>
+                        <h4 class="font-black text-white text-base leading-snug line-clamp-1">${car.name}</h4>
+                        <span class="text-[10px] text-zinc-500 font-bold uppercase tracking-wider block mt-0.5">${car.year} Model</span>
+                      </div>
+                      <a href="car-details.html?id=${car.id}" class="inline-flex text-xs text-brand-400 hover:underline font-bold">
+                        View Details &rarr;
+                      </a>
+                    </div>
+                  </th>
+                `).join('')}
+                ${Array(4 - cars.length).fill().map(() => `
+                  <th class="px-6 py-8 text-center text-zinc-700 bg-black/10">
+                    <div class="border-2 border-dashed border-zinc-800 rounded-3xl p-8 flex flex-col items-center justify-center min-h-[180px]">
+                      <span class="text-xs font-bold uppercase tracking-wider text-zinc-600 block mb-2">Slot Open</span>
+                      <a href="cars.html" class="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-[10px] font-bold text-zinc-400 hover:text-white transition">
+                        + Add Car
+                      </a>
+                    </div>
+                  </th>
+                `).join('')}
+              </tr>
+            </thead>
+            <tbody>
+              ${rowData.map(row => `
+                <tr class="border-b border-white/5 hover:bg-white/[0.01] transition">
+                  <td class="px-6 py-4.5 font-bold text-zinc-400 uppercase text-[10px] tracking-widest bg-white/[0.005]">${row.label}</td>
+                  ${cars.map(car => `
+                    <td class="px-6 py-4.5 text-zinc-300 font-medium">${row.value(car)}</td>
+                  `).join('')}
+                  ${Array(4 - cars.length).fill().map(() => `
+                    <td class="px-6 py-4.5 text-zinc-700 bg-black/10">--</td>
+                  `).join('')}
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        `;
+
+        container.innerHTML = tableHtml;
+
+        // Bind remove actions
+        container.querySelectorAll('.remove-compare-col').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const id = btn.getAttribute('data-id');
+            CompareService.removeCompare(id);
+          });
+        });
+
+      } catch (e) {
+        console.error('Failed to render comparison matrix:', e);
+        container.innerHTML = '<p class="col-span-full text-center text-rose-500">Failed to pull comparison metrics.</p>';
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automotive Brands - DriveX</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f5f7ff',
+              100: '#e9eeff',
+              200: '#cfd9ff',
+              300: '#a7b8ff',
+              400: '#7a8fff',
+              500: '#5669ff',
+              600: '#3947f5',
+              700: '#2f38d7',
+              800: '#2830ae',
+              900: '#252d89'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+<body class="text-white selection:bg-brand-500 selection:text-white min-h-screen flex flex-col">
+
+  <!-- HEADER -->
+  <div id="header-container"></div>
+
+  <!-- BRANDS EXHIBITION -->
+  <main class="flex-grow pt-24 pb-16">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <!-- HEADER TITLE -->
+      <div class="mb-12">
+        <p class="text-brand-500 font-semibold mb-1 uppercase tracking-wider text-xs">DriveX Exhibition</p>
+        <h1 class="text-4xl font-black text-white tracking-tight">World Class Brands</h1>
+        <p class="text-zinc-500 text-sm mt-1">Explore histories, configurations, and catalogs of 50 elite manufacturers.</p>
+      </div>
+
+      <!-- Search brands -->
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-6 mb-10 bg-white/5 border border-white/10 rounded-2xl p-6 glass">
+        <div class="w-full sm:max-w-xs relative">
+          <input type="text" id="brand-search" placeholder="Search manufacturers..." 
+                 class="w-full bg-white/5 border border-white/10 rounded-xl pl-4 pr-10 py-3 text-xs text-white outline-none focus:border-brand-500 transition duration-300">
+          <span class="absolute right-3.5 top-3.5 text-zinc-500">
+            <svg class="w-4.5 h-4.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </span>
+        </div>
+
+        <!-- Filter by country -->
+        <div class="w-full sm:max-w-xs flex items-center gap-3 justify-end">
+          <label for="country-filter" class="text-xs text-zinc-500 font-bold uppercase whitespace-nowrap">Country</label>
+          <select id="country-filter" class="bg-zinc-900 border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white outline-none focus:border-brand-500 cursor-pointer">
+            <option value="">All Regions</option>
+            <option value="Germany">Germany</option>
+            <option value="USA">USA</option>
+            <option value="Italy">Italy</option>
+            <option value="UK">United Kingdom</option>
+            <option value="Japan">Japan</option>
+            <option value="Sweden">Sweden</option>
+            <option value="France">France</option>
+            <option value="South Korea">South Korea</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- BRANDS GRID -->
+      <div id="brands-catalog-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+        <!-- Load dynamic cards -->
+        <div class="glass h-40 rounded-2xl animate-pulse"></div>
+        <div class="glass h-40 rounded-2xl animate-pulse"></div>
+        <div class="glass h-40 rounded-2xl animate-pulse"></div>
+        <div class="glass h-40 rounded-2xl animate-pulse"></div>
+        <div class="glass h-40 rounded-2xl animate-pulse"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <div id="footer-container"></div>
+
+  <!-- SCRIPTS -->
+  <script type="module" src="/assets/js/common.js"></script>
+  <script type="module">
+    import { BrandService } from './services/brands.service.js';
+
+    let brandsList = [];
+    let searchVal = '';
+    let countryVal = '';
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        brandsList = await BrandService.getAllBrands();
+        
+        // Setup Search and filters
+        const searchInput = document.getElementById('brand-search');
+        const countrySelect = document.getElementById('country-filter');
+
+        searchInput.addEventListener('input', () => {
+          searchVal = searchInput.value;
+          renderBrands();
+        });
+
+        countrySelect.addEventListener('change', () => {
+          countryVal = countrySelect.value;
+          renderBrands();
+        });
+
+        renderBrands();
+
+      } catch (e) {
+        console.error('Failed to load brands database:', e);
+        document.getElementById('brands-catalog-grid').innerHTML = '<p class="col-span-full text-center text-rose-500">Failed to retrieve brands catalog.</p>';
+      }
+    });
+
+    function renderBrands() {
+      const grid = document.getElementById('brands-catalog-grid');
+      let filtered = brandsList;
+
+      if (searchVal) {
+        const q = searchVal.toLowerCase();
+        filtered = filtered.filter(b => b.name.toLowerCase().includes(q) || b.country.toLowerCase().includes(q));
+      }
+
+      if (countryVal) {
+        filtered = filtered.filter(b => b.country.toLowerCase() === countryVal.toLowerCase());
+      }
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '<p class="col-span-full text-center text-zinc-500 py-12">No brands match your search criteria.</p>';
+        return;
+      }
+
+      grid.innerHTML = filtered.map(b => `
+        <a href="brand-details.html?id=${b.slug}" class="glass border border-white/10 rounded-2xl p-6.5 flex flex-col items-center justify-center text-center hover:scale-[1.03] transition duration-300 group relative">
+          
+          <!-- Brand Accent Acronym Icon -->
+          <div class="w-14 h-14 rounded-2xl bg-white/5 group-hover:bg-brand-600/10 border border-white/5 group-hover:border-brand-500/20 text-brand-400 font-black text-2xl flex items-center justify-center mb-4 transition duration-300">
+            ${b.name.substring(0, 2).toUpperCase()}
+          </div>
+          
+          <h3 class="font-black text-white group-hover:text-brand-400 transition text-base leading-tight mb-1">
+            ${b.name}
+          </h3>
+          
+          <span class="text-xs text-zinc-500 font-medium">${b.country}</span>
+          
+          <div class="flex items-center gap-1.5 mt-4 pt-3 border-t border-white/5 w-full justify-between text-[10px] text-zinc-500">
+            <span>Founded: <strong>${b.founded}</strong></span>
+            <span>Cars: <strong class="text-white">${b.vehicleCount}</strong></span>
+          </div>
+        </a>
+      `).join('');
+    }
+  </script>
+</body>
+</html>

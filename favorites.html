@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saved Garage - DriveX</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f5f7ff',
+              100: '#e9eeff',
+              200: '#cfd9ff',
+              300: '#a7b8ff',
+              400: '#7a8fff',
+              500: '#5669ff',
+              600: '#3947f5',
+              700: '#2f38d7',
+              800: '#2830ae',
+              900: '#252d89'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+<body class="text-white selection:bg-brand-500 selection:text-white min-h-screen flex flex-col">
+
+  <!-- HEADER -->
+  <div id="header-container"></div>
+
+  <!-- SAVED GARAGE -->
+  <main class="flex-grow pt-24 pb-16">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <!-- HEADER TITLE -->
+      <div class="mb-12">
+        <p class="text-brand-500 font-semibold mb-1 uppercase tracking-wider text-xs">DriveX Garage</p>
+        <h1 class="text-4xl font-black text-white tracking-tight">Saved Vehicles</h1>
+        <p class="text-zinc-500 text-sm mt-1">Review saved configurations and compare specifications.</p>
+      </div>
+
+      <!-- SHOWROOM GRID -->
+      <div id="favorites-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <!-- Load items -->
+        <div class="glass h-96 rounded-3xl animate-pulse"></div>
+        <div class="glass h-96 rounded-3xl animate-pulse"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <div id="footer-container"></div>
+
+  <!-- SCRIPTS -->
+  <script type="module" src="/assets/js/common.js"></script>
+  <script type="module">
+    import { FavoriteService } from './services/favorites.service.js';
+    import { CarService } from './services/cars.service.js';
+    import { CompareService } from './services/compare.service.js';
+    import { formatPrice, getRatingStars } from './assets/js/utils.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderFavorites();
+
+      // Listen for updates from drawer or other modules
+      window.addEventListener('drivex:favorites-updated', () => {
+        renderFavorites();
+      });
+    });
+
+    async function renderFavorites() {
+      const grid = document.getElementById('favorites-grid');
+      const favIds = FavoriteService.getFavorites();
+
+      if (favIds.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full py-20 text-center glass border border-white/5 rounded-[32px] max-w-lg mx-auto">
+            <div class="w-16 h-16 rounded-2xl bg-brand-600/10 border border-brand-500/20 text-brand-400 flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
+              </svg>
+            </div>
+            <h3 class="font-black text-white text-xl">Your garage is empty</h3>
+            <p class="text-zinc-500 text-sm mt-2 max-w-xs mx-auto leading-relaxed">
+              You haven't saved any configurations yet. Explore models and click the heart icon to save them here.
+            </p>
+            <a href="cars.html" class="inline-block mt-8 px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-500 font-bold text-xs transition shadow-lg shadow-brand-600/20">
+              Browse Vehicles Catalog
+            </a>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = `
+        <div class="col-span-full py-12 flex flex-col items-center justify-center">
+          <div class="loader-spinner mb-4"></div>
+          <p class="text-zinc-500 text-sm">Opening garage doors...</p>
+        </div>
+      `;
+
+      try {
+        const carPromises = favIds.map(id => CarService.getCarById(id));
+        const cars = await Promise.all(carPromises);
+        
+        // Render favorites list
+        grid.innerHTML = cars.filter(c => c).map(car => {
+          const inComp = CompareService.isInCompare(car.id);
+          return `
+            <div class="glass border border-white/10 rounded-3xl overflow-hidden group hover:scale-[1.01] transition duration-300 flex flex-col relative h-full">
+              
+              <!-- Image -->
+              <div class="relative overflow-hidden aspect-[16/10] bg-zinc-950">
+                <img src="${car.images[0]}" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500">
+                
+                <div class="absolute top-4 left-4">
+                  <span class="px-3 py-1 text-[10px] font-bold tracking-wider uppercase bg-brand-600/80 border border-brand-500/30 rounded-full backdrop-blur-md">
+                    ${car.category}
+                  </span>
+                </div>
+
+                <!-- Delete Action -->
+                <div class="absolute top-4 right-4 flex gap-2">
+                  <button class="remove-fav-btn w-9 h-9 rounded-full bg-rose-600/85 hover:bg-rose-600 flex items-center justify-center text-white transition shadow-lg" 
+                          data-id="${car.id}" title="Remove from garage">
+                    &times;
+                  </button>
+                  <button class="compare-toggle w-9 h-9 rounded-full glass flex items-center justify-center text-zinc-300 hover:text-white transition" 
+                          data-id="${car.id}" title="${inComp ? 'Remove from comparison' : 'Add to comparison'}">
+                    <svg class="w-4 h-4 ${inComp ? 'text-brand-400 fill-brand-500/20' : 'stroke-current'}" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Details info -->
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex justify-between items-start gap-2 mb-1">
+                  <span class="text-xs text-zinc-500 font-bold uppercase tracking-wider">${car.brand}</span>
+                  <span class="text-xs text-zinc-400 font-semibold">${car.year}</span>
+                </div>
+                
+                <a href="car-details.html?id=${car.id}" class="font-black text-xl text-white hover:text-brand-400 transition leading-tight truncate mb-3">
+                  ${car.name}
+                </a>
+
+                <!-- Specifications overview -->
+                <div class="grid grid-cols-2 gap-y-3 gap-x-2 py-4 border-y border-white/5 my-4 text-xs text-zinc-400">
+                  <div class="flex items-center gap-1.5">
+                    <span>⚡ Power:</span>
+                    <strong class="text-white">${car.horsepower} HP</strong>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span>🏁 0-100:</span>
+                    <strong class="text-white">${car.acceleration}s</strong>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span>🔋 Range:</span>
+                    <strong class="text-white">${car.rangeKm ? `${car.rangeKm} km` : 'N/A'}</strong>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span>⛽ Fuel:</span>
+                    <strong class="text-white">${car.fuelType}</strong>
+                  </div>
+                </div>
+
+                <!-- Footer Price & Rating -->
+                <div class="flex items-center justify-between mt-auto pt-2">
+                  <div class="text-sm font-black text-brand-400 text-lg">
+                    ${formatPrice(car.price)}
+                  </div>
+                  <div>
+                    ${getRatingStars(car.rating)}
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          `;
+        }).join('');
+
+        // Bind Actions
+        grid.querySelectorAll('.remove-fav-btn').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const id = btn.getAttribute('data-id');
+            FavoriteService.removeFavorite(id);
+          });
+        });
+
+        grid.querySelectorAll('.compare-toggle').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const id = btn.getAttribute('data-id');
+            const { inCompare, message } = CompareService.toggleCompare(id);
+            if (message) {
+              alert(message);
+            }
+            const icon = btn.querySelector('svg');
+            if (inCompare) {
+              icon.classList.add('text-brand-400', 'fill-brand-500/20');
+            } else {
+              icon.classList.remove('text-brand-400', 'fill-brand-500/20');
+            }
+          });
+        });
+
+      } catch (e) {
+        console.error('Failed to load favorites items:', e);
+        grid.innerHTML = '<p class="col-span-full text-center text-rose-500">Failed to pull saved garage logs.</p>';
+      }
+    }
+  </script>
+</body>
+</html>

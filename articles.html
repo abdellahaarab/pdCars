@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automotive Magazine - DriveX</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f5f7ff',
+              100: '#e9eeff',
+              200: '#cfd9ff',
+              300: '#a7b8ff',
+              400: '#7a8fff',
+              500: '#5669ff',
+              600: '#3947f5',
+              700: '#2f38d7',
+              800: '#2830ae',
+              900: '#252d89'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+<body class="text-white selection:bg-brand-500 selection:text-white min-h-screen flex flex-col">
+
+  <!-- HEADER -->
+  <div id="header-container"></div>
+
+  <!-- MAGAZINE INDEX -->
+  <main class="flex-grow pt-24 pb-16">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <!-- HEADER TITLE & SEARCH -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <p class="text-brand-500 font-semibold mb-1 uppercase tracking-wider text-xs">DriveX Magazine</p>
+          <h1 class="text-4xl font-black text-white tracking-tight">Automotive Insights</h1>
+          <p class="text-zinc-500 text-sm mt-1">Deep dives into luxury styling, electric engineering, and news.</p>
+        </div>
+
+        <div class="relative w-full md:max-w-xs">
+          <input type="text" id="article-search" placeholder="Search articles..." 
+                 class="w-full bg-white/5 border border-white/10 rounded-xl pl-4 pr-10 py-3 text-sm text-white outline-none focus:border-brand-500 transition duration-300">
+          <span class="absolute right-3.5 top-3.5 text-zinc-500">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </span>
+        </div>
+      </div>
+
+      <!-- FEATURED BANNER SECTION -->
+      <div id="featured-article-banner" class="mb-16">
+        <!-- Rendered dynamically -->
+        <div class="glass border border-white/10 rounded-3xl h-96 animate-pulse"></div>
+      </div>
+
+      <!-- CATEGORY TABS -->
+      <div class="flex border-b border-white/10 gap-6 overflow-x-auto text-sm font-bold pb-px mb-10" id="category-tabs-container">
+        <button class="cat-tab pb-4 text-white border-b-2 border-brand-500 transition duration-300" data-category="">
+          All Stories
+        </button>
+        <button class="cat-tab pb-4 text-zinc-500 hover:text-white transition duration-300" data-category="Electric Vehicles">
+          Electric Vehicles
+        </button>
+        <button class="cat-tab pb-4 text-zinc-500 hover:text-white transition duration-300" data-category="Luxury Cars">
+          Luxury Cars
+        </button>
+        <button class="cat-tab pb-4 text-zinc-500 hover:text-white transition duration-300" data-category="Supercars">
+          Supercars & Hypercars
+        </button>
+        <button class="cat-tab pb-4 text-zinc-500 hover:text-white transition duration-300" data-category="Technology">
+          Technology
+        </button>
+        <button class="cat-tab pb-4 text-zinc-500 hover:text-white transition duration-300" data-category="Motorsports">
+          Motorsports
+        </button>
+        <button class="cat-tab pb-4 text-zinc-500 hover:text-white transition duration-300" data-category="Buying Guides">
+          Buying Guides
+        </button>
+      </div>
+
+      <!-- ARTICLES GRID -->
+      <div id="articles-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Renders dynamically -->
+      </div>
+
+      <!-- PAGINATION -->
+      <div id="articles-pagination" class="flex justify-center items-center gap-2 pt-12">
+        <!-- Pagination links -->
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <div id="footer-container"></div>
+
+  <!-- SCRIPTS -->
+  <script type="module" src="/assets/js/common.js"></script>
+  <script type="module">
+    import { ArticleService } from './services/articles.service.js';
+
+    let currentCategory = '';
+    let currentSearch = '';
+    let currentPage = 1;
+    const itemsPerPage = 9;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Setup listeners
+      const searchInput = document.getElementById('article-search');
+      searchInput.addEventListener('input', () => {
+        currentSearch = searchInput.value;
+        currentPage = 1;
+        fetchAndRenderArticles();
+      });
+
+      // Categories bindings
+      document.querySelectorAll('.cat-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+          document.querySelectorAll('.cat-tab').forEach(t => {
+            t.classList.remove('text-white', 'border-b-2', 'border-brand-500');
+            t.classList.add('text-zinc-500');
+          });
+          tab.classList.add('text-white', 'border-b-2', 'border-brand-500');
+          tab.classList.remove('text-zinc-500');
+
+          currentCategory = tab.getAttribute('data-category');
+          currentPage = 1;
+          fetchAndRenderArticles();
+        });
+      });
+
+      // Load initial banner and articles
+      renderFeaturedBanner();
+      fetchAndRenderArticles();
+    });
+
+    async function renderFeaturedBanner() {
+      const banner = document.getElementById('featured-article-banner');
+      try {
+        const featured = await ArticleService.getFeaturedArticles(1);
+        if (featured.length === 0) {
+          banner.style.display = 'none';
+          return;
+        }
+
+        const art = featured[0];
+        banner.innerHTML = `
+          <div class="glass border border-white/10 rounded-[32px] overflow-hidden grid lg:grid-cols-12 items-center hover:scale-[1.005] transition duration-500 relative">
+            <div class="lg:col-span-7 h-64 lg:h-[450px]">
+              <img src="${art.image}" class="w-full h-full object-cover">
+            </div>
+            
+            <div class="lg:col-span-5 p-8 md:p-12 space-y-6 flex flex-col justify-center">
+              <div class="flex items-center gap-3 text-xs font-bold text-brand-400 uppercase tracking-widest">
+                <span>Featured Story</span>
+                <span>•</span>
+                <span>${art.category}</span>
+              </div>
+              
+              <h2 class="text-3xl md:text-4xl font-black text-white hover:text-brand-400 transition leading-tight">
+                <a href="article-details.html?id=${art.id}">${art.title}</a>
+              </h2>
+              
+              <p class="text-zinc-400 text-sm leading-relaxed">
+                ${art.excerpt}
+              </p>
+              
+              <div class="flex items-center justify-between pt-6 border-t border-white/5">
+                <div class="flex items-center gap-2">
+                  <span class="text-xs text-zinc-500 font-bold">${art.author}</span>
+                  <span class="text-[10px] text-zinc-600 font-medium">${art.publishedAt}</span>
+                </div>
+                
+                <a href="article-details.html?id=${art.id}" class="px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 transition font-bold text-xs">
+                  Read Feature
+                </a>
+              </div>
+            </div>
+          </div>
+        `;
+      } catch (e) {
+        console.error('Featured banner load failed:', e);
+        banner.style.display = 'none';
+      }
+    }
+
+    async function fetchAndRenderArticles() {
+      const grid = document.getElementById('articles-grid');
+      const paginationDiv = document.getElementById('articles-pagination');
+
+      grid.innerHTML = `
+        <div class="col-span-full py-12 flex flex-col items-center justify-center">
+          <div class="loader-spinner mb-4"></div>
+          <p class="text-zinc-500 text-sm">Searching magazine database...</p>
+        </div>
+      `;
+
+      try {
+        const { articles, total, page, pages } = await ArticleService.getArticles(currentCategory, currentSearch, currentPage, itemsPerPage);
+
+        if (articles.length === 0) {
+          grid.innerHTML = `
+            <div class="col-span-full py-12 text-center text-zinc-500">
+              No matching articles found in category.
+            </div>
+          `;
+          paginationDiv.innerHTML = '';
+          return;
+        }
+
+        grid.innerHTML = articles.map(art => `
+          <article class="glass border border-white/10 rounded-3xl overflow-hidden flex flex-col hover:scale-[1.01] transition duration-300">
+            <div class="overflow-hidden aspect-[16/9] bg-zinc-950">
+              <img src="${art.image}" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition duration-500">
+            </div>
+            
+            <div class="p-7 flex flex-col flex-grow">
+              <div class="flex items-center justify-between text-xs text-zinc-500 font-bold uppercase tracking-wider mb-3">
+                <span class="text-brand-400">${art.category}</span>
+                <span>${art.readTime} min read</span>
+              </div>
+              
+              <h3 class="text-xl font-black text-white hover:text-brand-400 transition line-clamp-2 leading-snug mb-3">
+                <a href="article-details.html?id=${art.id}">
+                  ${art.title}
+                </a>
+              </h3>
+              
+              <p class="text-zinc-400 text-sm leading-relaxed line-clamp-3 mb-6">
+                ${art.excerpt}
+              </p>
+
+              <div class="flex items-center justify-between mt-auto pt-4 border-t border-white/5">
+                <span class="text-xs text-zinc-500 font-semibold">${art.author}</span>
+                <a href="article-details.html?id=${art.id}" class="text-brand-400 hover:text-brand-300 text-xs font-bold flex items-center gap-1">
+                  Read Article →
+                </a>
+              </div>
+            </div>
+          </article>
+        `).join('');
+
+        renderPagination(pages, page);
+      } catch (e) {
+        console.error('Articles loading failed:', e);
+        grid.innerHTML = '<p class="col-span-full text-center text-rose-500">Failed to retrieve articles database.</p>';
+      }
+    }
+
+    function renderPagination(totalPages, currentPageNum) {
+      const paginationDiv = document.getElementById('articles-pagination');
+      if (totalPages <= 1) {
+        paginationDiv.innerHTML = '';
+        return;
+      }
+
+      let html = '';
+      html += `
+        <button class="px-4 py-2.5 rounded-xl border border-white/10 text-xs font-bold transition hover:bg-white/5 disabled:opacity-30 disabled:hover:bg-transparent" 
+                ${currentPageNum === 1 ? 'disabled' : ''} onclick="changePage(${currentPageNum - 1})">
+          Prev
+        </button>
+      `;
+
+      for (let i = 1; i <= totalPages; i++) {
+        if (i === 1 || i === totalPages || (i >= currentPageNum - 1 && i <= currentPageNum + 1)) {
+          html += `
+            <button class="w-10 h-10 rounded-xl border ${i === currentPageNum ? 'bg-brand-600 border-brand-500 text-white' : 'border-white/10 text-zinc-400 hover:bg-white/5'} text-xs font-bold transition" 
+                    onclick="changePage(${i})">
+              ${i}
+            </button>
+          `;
+        } else if (i === currentPageNum - 2 || i === currentPageNum + 2) {
+          html += `<span class="text-zinc-600 text-xs px-1">...</span>`;
+        }
+      }
+
+      html += `
+        <button class="px-4 py-2.5 rounded-xl border border-white/10 text-xs font-bold transition hover:bg-white/5 disabled:opacity-30 disabled:hover:bg-transparent" 
+                ${currentPageNum === totalPages ? 'disabled' : ''} onclick="changePage(${currentPageNum + 1})">
+          Next
+        </button>
+      `;
+
+      paginationDiv.innerHTML = html;
+    }
+
+    window.changePage = (pageNum) => {
+      currentPage = pageNum;
+      fetchAndRenderArticles();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+</body>
+</html>

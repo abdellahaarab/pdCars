@@ -1,0 +1,4192 @@
+[
+  {
+    "id": 1,
+    "name": "Chevrolet Plaid 50d",
+    "slug": "chevrolet-plaid-50d",
+    "brand": "Chevrolet",
+    "price": 100910,
+    "year": 2025,
+    "category": "Off-Road & Adventure",
+    "fuelType": "Hybrid",
+    "transmission": "Manual",
+    "horsepower": 484,
+    "torque": 344,
+    "rangeKm": null,
+    "topSpeed": 213,
+    "acceleration": 4.1,
+    "rating": 4.6,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Wireless Apple CarPlay & Android Auto",
+      "Premium Surround Sound System",
+      "LED Matrix Headlights",
+      "Heated and Ventilated Seats",
+      "Dynamic Chassis Control",
+      "Level 2 Self-Driving Capability",
+      "Panoramic Glass Roof"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "372 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1844 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Dodge Carbon 40d",
+    "slug": "dodge-carbon-40d",
+    "brand": "Dodge",
+    "price": 258257,
+    "year": 2025,
+    "category": "SUV & Crossovers",
+    "fuelType": "Diesel",
+    "transmission": "Manual",
+    "horsepower": 993,
+    "torque": 1178,
+    "rangeKm": null,
+    "topSpeed": 364,
+    "acceleration": 2,
+    "rating": 4.7,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Head-up HUD Display",
+      "Level 2 Self-Driving Capability",
+      "Dynamic Chassis Control",
+      "Premium Surround Sound System",
+      "Active Lane Keep Assist"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "398 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1769 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Lexus Chrono 40d",
+    "slug": "lexus-chrono-40d",
+    "brand": "Lexus",
+    "price": 282255,
+    "year": 2027,
+    "category": "Sports Coupes",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Automatic",
+    "horsepower": 580,
+    "torque": 521,
+    "rangeKm": 499,
+    "topSpeed": 370,
+    "acceleration": 4.6,
+    "rating": 4.7,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Premium Surround Sound System",
+      "Head-up HUD Display",
+      "Wireless Apple CarPlay & Android Auto",
+      "LED Matrix Headlights",
+      "Level 2 Self-Driving Capability",
+      "Active Lane Keep Assist",
+      "360 Degree Surround Camera"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 2,
+      "luggageCapacity": "334 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1583 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Hyundai Plaid 30d",
+    "slug": "hyundai-plaid-30d",
+    "brand": "Hyundai",
+    "price": 150501,
+    "year": 2025,
+    "category": "Sports Coupes",
+    "fuelType": "Diesel",
+    "transmission": "Automatic",
+    "horsepower": 1009,
+    "torque": 397,
+    "rangeKm": null,
+    "topSpeed": 208,
+    "acceleration": 6.1,
+    "rating": 4.4,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Voice-Activated Controls",
+      "Heated and Ventilated Seats",
+      "Panoramic Glass Roof",
+      "Level 2 Self-Driving Capability",
+      "Head-up HUD Display",
+      "Premium Surround Sound System",
+      "360 Degree Surround Camera"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 7,
+      "luggageCapacity": "358 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2245 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Lincoln RS 80d",
+    "slug": "lincoln-rs-80d",
+    "brand": "Lincoln",
+    "price": 217493,
+    "year": 2026,
+    "category": "Electric Vehicles",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 831,
+    "torque": 427,
+    "rangeKm": 470,
+    "topSpeed": 212,
+    "acceleration": 4.9,
+    "rating": 4.8,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "360 Degree Surround Camera",
+      "Head-up HUD Display",
+      "Wireless Apple CarPlay & Android Auto",
+      "Voice-Activated Controls",
+      "Heated and Ventilated Seats"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 7,
+      "luggageCapacity": "625 Liters",
+      "batteryCapacity": "88 kWh",
+      "weight": "1480 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Hyundai Hybrid 70d",
+    "slug": "hyundai-hybrid-70d",
+    "brand": "Hyundai",
+    "price": 47315,
+    "year": 2026,
+    "category": "SUV & Crossovers",
+    "fuelType": "Gasoline",
+    "transmission": "Manual",
+    "horsepower": 430,
+    "torque": 1235,
+    "rangeKm": null,
+    "topSpeed": 327,
+    "acceleration": 4.1,
+    "rating": 4.8,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "LED Matrix Headlights",
+      "Panoramic Glass Roof",
+      "Head-up HUD Display",
+      "Dynamic Chassis Control",
+      "Voice-Activated Controls",
+      "Adaptive Cruise Control"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "403 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2359 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Cadillac Quadrifoglio 70d",
+    "slug": "cadillac-quadrifoglio-70d",
+    "brand": "Cadillac",
+    "price": 65319,
+    "year": 2026,
+    "category": "Sports Coupes",
+    "fuelType": "Diesel",
+    "transmission": "Dual-Clutch",
+    "horsepower": 505,
+    "torque": 654,
+    "rangeKm": null,
+    "topSpeed": 299,
+    "acceleration": 4.2,
+    "rating": 5,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Head-up HUD Display",
+      "Voice-Activated Controls",
+      "Premium Surround Sound System",
+      "Dynamic Chassis Control",
+      "Level 2 Self-Driving Capability"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 2,
+      "luggageCapacity": "439 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1680 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Pagani Quadri 40d",
+    "slug": "pagani-quadri-40d",
+    "brand": "Pagani",
+    "price": 101044,
+    "year": 2027,
+    "category": "Sports Coupes",
+    "fuelType": "Gasoline",
+    "transmission": "Manual",
+    "horsepower": 735,
+    "torque": 979,
+    "rangeKm": null,
+    "topSpeed": 336,
+    "acceleration": 5.4,
+    "rating": 4.2,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Premium Surround Sound System",
+      "Heated and Ventilated Seats",
+      "Adaptive Cruise Control",
+      "LED Matrix Headlights",
+      "Dynamic Chassis Control",
+      "Head-up HUD Display",
+      "Active Lane Keep Assist",
+      "Wireless Apple CarPlay & Android Auto",
+      "Panoramic Glass Roof"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 2,
+      "luggageCapacity": "426 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1566 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Lucid Prestige 70d",
+    "slug": "lucid-prestige-70d",
+    "brand": "Lucid",
+    "price": 113247,
+    "year": 2025,
+    "category": "Off-Road & Adventure",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 595,
+    "torque": 1008,
+    "rangeKm": 369,
+    "topSpeed": 377,
+    "acceleration": 2.4,
+    "rating": 4.4,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Voice-Activated Controls",
+      "Wireless Apple CarPlay & Android Auto",
+      "Adaptive Cruise Control",
+      "360 Degree Surround Camera",
+      "Heated and Ventilated Seats",
+      "Active Lane Keep Assist",
+      "Level 2 Self-Driving Capability",
+      "Panoramic Glass Roof"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "444 Liters",
+      "batteryCapacity": "103 kWh",
+      "weight": "2295 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Audi Prestige 60d",
+    "slug": "audi-prestige-60d",
+    "brand": "Audi",
+    "price": 325800,
+    "year": 2024,
+    "category": "Supercars & Hypercars",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 689,
+    "torque": 606,
+    "rangeKm": 589,
+    "topSpeed": 244,
+    "acceleration": 3.6,
+    "rating": 4.3,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Head-up HUD Display",
+      "Heated and Ventilated Seats",
+      "360 Degree Surround Camera",
+      "Premium Surround Sound System",
+      "LED Matrix Headlights",
+      "Level 2 Self-Driving Capability"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "364 Liters",
+      "batteryCapacity": "108 kWh",
+      "weight": "1768 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Honda R-Design 90d",
+    "slug": "honda-r-design-90d",
+    "brand": "Honda",
+    "price": 333343,
+    "year": 2027,
+    "category": "Sports Coupes",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Dual-Clutch",
+    "horsepower": 823,
+    "torque": 1008,
+    "rangeKm": 377,
+    "topSpeed": 229,
+    "acceleration": 6,
+    "rating": 4.4,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Wireless Apple CarPlay & Android Auto",
+      "Active Lane Keep Assist",
+      "Head-up HUD Display",
+      "Panoramic Glass Roof",
+      "Voice-Activated Controls",
+      "Level 2 Self-Driving Capability"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 2,
+      "luggageCapacity": "594 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1585 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 12,
+    "name": "McLaren Trek 40d",
+    "slug": "mclaren-trek-40d",
+    "brand": "McLaren",
+    "price": 153062,
+    "year": 2024,
+    "category": "SUV & Crossovers",
+    "fuelType": "Hybrid",
+    "transmission": "Automatic",
+    "horsepower": 1113,
+    "torque": 1013,
+    "rangeKm": null,
+    "topSpeed": 376,
+    "acceleration": 6.1,
+    "rating": 4.5,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Wireless Apple CarPlay & Android Auto",
+      "Adaptive Cruise Control",
+      "Head-up HUD Display",
+      "LED Matrix Headlights",
+      "360 Degree Surround Camera"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 7,
+      "luggageCapacity": "555 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1712 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Fiat M Edition 40d",
+    "slug": "fiat-m-edition-40d",
+    "brand": "Fiat",
+    "price": 307324,
+    "year": 2024,
+    "category": "Electric Vehicles",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 1035,
+    "torque": 1042,
+    "rangeKm": 618,
+    "topSpeed": 257,
+    "acceleration": 3.5,
+    "rating": 4.8,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Head-up HUD Display",
+      "Panoramic Glass Roof",
+      "Voice-Activated Controls",
+      "360 Degree Surround Camera",
+      "Level 2 Self-Driving Capability",
+      "Active Lane Keep Assist",
+      "Dynamic Chassis Control",
+      "Heated and Ventilated Seats"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "445 Liters",
+      "batteryCapacity": "102 kWh",
+      "weight": "2154 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Fiat Carbon 60d",
+    "slug": "fiat-carbon-60d",
+    "brand": "Fiat",
+    "price": 152130,
+    "year": 2025,
+    "category": "Luxury Sedans",
+    "fuelType": "Gasoline",
+    "transmission": "Manual",
+    "horsepower": 435,
+    "torque": 618,
+    "rangeKm": null,
+    "topSpeed": 374,
+    "acceleration": 4.9,
+    "rating": 4.4,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1605558202138-25ee2f30f07e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Head-up HUD Display",
+      "Voice-Activated Controls",
+      "Heated and Ventilated Seats",
+      "Level 2 Self-Driving Capability",
+      "Active Lane Keep Assist",
+      "Dynamic Chassis Control",
+      "Premium Surround Sound System",
+      "Adaptive Cruise Control"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "493 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1724 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Mercedes-Benz Hybrid 40d",
+    "slug": "mercedes-benz-hybrid-40d",
+    "brand": "Mercedes-Benz",
+    "price": 230932,
+    "year": 2025,
+    "category": "Off-Road & Adventure",
+    "fuelType": "Diesel",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 1097,
+    "torque": 492,
+    "rangeKm": null,
+    "topSpeed": 337,
+    "acceleration": 4.8,
+    "rating": 4.3,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1605558202138-25ee2f30f07e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Head-up HUD Display",
+      "Level 2 Self-Driving Capability",
+      "Panoramic Glass Roof",
+      "Premium Surround Sound System",
+      "360 Degree Surround Camera",
+      "Voice-Activated Controls",
+      "Dynamic Chassis Control",
+      "Heated and Ventilated Seats"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "369 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2089 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Nissan RS 40d",
+    "slug": "nissan-rs-40d",
+    "brand": "Nissan",
+    "price": 69448,
+    "year": 2027,
+    "category": "Hybrids",
+    "fuelType": "Hybrid",
+    "transmission": "Dual-Clutch",
+    "horsepower": 604,
+    "torque": 579,
+    "rangeKm": null,
+    "topSpeed": 328,
+    "acceleration": 6.5,
+    "rating": 4.7,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1605558202138-25ee2f30f07e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Premium Surround Sound System",
+      "Dynamic Chassis Control",
+      "Adaptive Cruise Control",
+      "Voice-Activated Controls",
+      "Head-up HUD Display"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "305 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1433 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Acura S 30d",
+    "slug": "acura-s-30d",
+    "brand": "Acura",
+    "price": 292153,
+    "year": 2026,
+    "category": "Luxury Sedans",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Dual-Clutch",
+    "horsepower": 1169,
+    "torque": 350,
+    "rangeKm": 592,
+    "topSpeed": 419,
+    "acceleration": 4.3,
+    "rating": 4.2,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Wireless Apple CarPlay & Android Auto",
+      "Level 2 Self-Driving Capability",
+      "Heated and Ventilated Seats",
+      "360 Degree Surround Camera",
+      "Voice-Activated Controls",
+      "Head-up HUD Display",
+      "Premium Surround Sound System",
+      "LED Matrix Headlights"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 3,
+      "luggageCapacity": "602 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2003 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 18,
+    "name": "Land Rover Trek 50d",
+    "slug": "land-rover-trek-50d",
+    "brand": "Land Rover",
+    "price": 246217,
+    "year": 2024,
+    "category": "Supercars & Hypercars",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 369,
+    "torque": 868,
+    "rangeKm": 476,
+    "topSpeed": 254,
+    "acceleration": 2.7,
+    "rating": 4.6,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "360 Degree Surround Camera",
+      "Head-up HUD Display",
+      "LED Matrix Headlights",
+      "Active Lane Keep Assist",
+      "Dynamic Chassis Control"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 5,
+      "luggageCapacity": "466 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1459 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Corvette Trident 60d",
+    "slug": "corvette-trident-60d",
+    "brand": "Corvette",
+    "price": 316721,
+    "year": 2024,
+    "category": "SUV & Crossovers",
+    "fuelType": "Diesel",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 415,
+    "torque": 1265,
+    "rangeKm": null,
+    "topSpeed": 225,
+    "acceleration": 3,
+    "rating": 4.3,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "360 Degree Surround Camera",
+      "Wireless Apple CarPlay & Android Auto",
+      "LED Matrix Headlights",
+      "Head-up HUD Display",
+      "Adaptive Cruise Control",
+      "Active Lane Keep Assist",
+      "Panoramic Glass Roof",
+      "Voice-Activated Controls"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "347 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2314 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Rimac Performante 30d",
+    "slug": "rimac-performante-30d",
+    "brand": "Rimac",
+    "price": 178674,
+    "year": 2026,
+    "category": "Hybrids",
+    "fuelType": "Hybrid",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 459,
+    "torque": 1123,
+    "rangeKm": null,
+    "topSpeed": 255,
+    "acceleration": 5.8,
+    "rating": 4.6,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Voice-Activated Controls",
+      "Panoramic Glass Roof",
+      "Heated and Ventilated Seats",
+      "360 Degree Surround Camera",
+      "Level 2 Self-Driving Capability",
+      "Premium Surround Sound System",
+      "Wireless Apple CarPlay & Android Auto"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "444 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1566 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 21,
+    "name": "Lucid Carbon 70d",
+    "slug": "lucid-carbon-70d",
+    "brand": "Lucid",
+    "price": 328433,
+    "year": 2027,
+    "category": "Hybrids",
+    "fuelType": "Hybrid",
+    "transmission": "Dual-Clutch",
+    "horsepower": 1026,
+    "torque": 775,
+    "rangeKm": null,
+    "topSpeed": 299,
+    "acceleration": 2.5,
+    "rating": 4.3,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Panoramic Glass Roof",
+      "Heated and Ventilated Seats",
+      "Adaptive Cruise Control",
+      "360 Degree Surround Camera",
+      "LED Matrix Headlights"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 2,
+      "luggageCapacity": "547 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1904 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 22,
+    "name": "McLaren Quadrifoglio 40d",
+    "slug": "mclaren-quadrifoglio-40d",
+    "brand": "McLaren",
+    "price": 223392,
+    "year": 2026,
+    "category": "Electric Vehicles",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 672,
+    "torque": 624,
+    "rangeKm": 358,
+    "topSpeed": 382,
+    "acceleration": 6.3,
+    "rating": 4.6,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Premium Surround Sound System",
+      "Head-up HUD Display",
+      "Dynamic Chassis Control",
+      "Voice-Activated Controls",
+      "Adaptive Cruise Control",
+      "Wireless Apple CarPlay & Android Auto",
+      "Level 2 Self-Driving Capability",
+      "Heated and Ventilated Seats"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 7,
+      "luggageCapacity": "638 Liters",
+      "batteryCapacity": "96 kWh",
+      "weight": "2112 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 23,
+    "name": "Corvette RS 70d",
+    "slug": "corvette-rs-70d",
+    "brand": "Corvette",
+    "price": 119927,
+    "year": 2026,
+    "category": "Supercars & Hypercars",
+    "fuelType": "Diesel",
+    "transmission": "Dual-Clutch",
+    "horsepower": 1176,
+    "torque": 768,
+    "rangeKm": null,
+    "topSpeed": 410,
+    "acceleration": 6,
+    "rating": 4.4,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Premium Surround Sound System",
+      "Heated and Ventilated Seats",
+      "Head-up HUD Display",
+      "Adaptive Cruise Control",
+      "Active Lane Keep Assist",
+      "360 Degree Surround Camera"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 2,
+      "luggageCapacity": "440 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2028 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 24,
+    "name": "Lexus Concept One 80d",
+    "slug": "lexus-concept-one-80d",
+    "brand": "Lexus",
+    "price": 285759,
+    "year": 2027,
+    "category": "SUV & Crossovers",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Manual",
+    "horsepower": 1179,
+    "torque": 656,
+    "rangeKm": 410,
+    "topSpeed": 260,
+    "acceleration": 4.7,
+    "rating": 4.2,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Heated and Ventilated Seats",
+      "LED Matrix Headlights",
+      "Active Lane Keep Assist",
+      "360 Degree Surround Camera",
+      "Premium Surround Sound System"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "531 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2226 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 25,
+    "name": "Citroen RS 90d",
+    "slug": "citroen-rs-90d",
+    "brand": "Citroen",
+    "price": 128600,
+    "year": 2026,
+    "category": "Supercars & Hypercars",
+    "fuelType": "Diesel",
+    "transmission": "Automatic",
+    "horsepower": 344,
+    "torque": 366,
+    "rangeKm": null,
+    "topSpeed": 359,
+    "acceleration": 6,
+    "rating": 4.8,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Wireless Apple CarPlay & Android Auto",
+      "Head-up HUD Display",
+      "Heated and Ventilated Seats",
+      "Level 2 Self-Driving Capability",
+      "Voice-Activated Controls"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "472 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1784 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 26,
+    "name": "Cadillac Prestige 90d",
+    "slug": "cadillac-prestige-90d",
+    "brand": "Cadillac",
+    "price": 135728,
+    "year": 2024,
+    "category": "SUV & Crossovers",
+    "fuelType": "Diesel",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 1143,
+    "torque": 1298,
+    "rangeKm": null,
+    "topSpeed": 398,
+    "acceleration": 5.9,
+    "rating": 4.9,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Dynamic Chassis Control",
+      "Premium Surround Sound System",
+      "Panoramic Glass Roof",
+      "LED Matrix Headlights",
+      "Adaptive Cruise Control"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 3,
+      "luggageCapacity": "401 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1461 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 27,
+    "name": "Polestar Veloce 40d",
+    "slug": "polestar-veloce-40d",
+    "brand": "Polestar",
+    "price": 97508,
+    "year": 2027,
+    "category": "Electric Vehicles",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 1168,
+    "torque": 820,
+    "rangeKm": 462,
+    "topSpeed": 271,
+    "acceleration": 2.6,
+    "rating": 4.6,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Dynamic Chassis Control",
+      "Heated and Ventilated Seats",
+      "Voice-Activated Controls",
+      "Panoramic Glass Roof",
+      "Adaptive Cruise Control",
+      "Level 2 Self-Driving Capability",
+      "Premium Surround Sound System",
+      "Active Lane Keep Assist",
+      "Head-up HUD Display"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 2,
+      "luggageCapacity": "440 Liters",
+      "batteryCapacity": "85 kWh",
+      "weight": "1902 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 28,
+    "name": "Ferrari Concept One 40d",
+    "slug": "ferrari-concept-one-40d",
+    "brand": "Ferrari",
+    "price": 263405,
+    "year": 2024,
+    "category": "Sports Coupes",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 676,
+    "torque": 478,
+    "rangeKm": 548,
+    "topSpeed": 352,
+    "acceleration": 3,
+    "rating": 5,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Premium Surround Sound System",
+      "Head-up HUD Display",
+      "Dynamic Chassis Control",
+      "Voice-Activated Controls",
+      "Wireless Apple CarPlay & Android Auto"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 7,
+      "luggageCapacity": "424 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1680 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 29,
+    "name": "Lincoln EV 80d",
+    "slug": "lincoln-ev-80d",
+    "brand": "Lincoln",
+    "price": 126397,
+    "year": 2026,
+    "category": "Off-Road & Adventure",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Automatic",
+    "horsepower": 719,
+    "torque": 331,
+    "rangeKm": 392,
+    "topSpeed": 344,
+    "acceleration": 4.4,
+    "rating": 5,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "LED Matrix Headlights",
+      "Premium Surround Sound System",
+      "Heated and Ventilated Seats",
+      "Active Lane Keep Assist",
+      "Wireless Apple CarPlay & Android Auto",
+      "Head-up HUD Display"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 5,
+      "luggageCapacity": "337 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2271 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 30,
+    "name": "Cupra Apex 30d",
+    "slug": "cupra-apex-30d",
+    "brand": "Cupra",
+    "price": 240125,
+    "year": 2024,
+    "category": "SUV & Crossovers",
+    "fuelType": "Hybrid",
+    "transmission": "Manual",
+    "horsepower": 946,
+    "torque": 1044,
+    "rangeKm": null,
+    "topSpeed": 285,
+    "acceleration": 5.6,
+    "rating": 4.3,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1605558202138-25ee2f30f07e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Active Lane Keep Assist",
+      "Panoramic Glass Roof",
+      "Adaptive Cruise Control",
+      "Premium Surround Sound System",
+      "Dynamic Chassis Control"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 2,
+      "luggageCapacity": "409 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1495 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 31,
+    "name": "Nissan M Edition 30d",
+    "slug": "nissan-m-edition-30d",
+    "brand": "Nissan",
+    "price": 214043,
+    "year": 2024,
+    "category": "Luxury Sedans",
+    "fuelType": "Hybrid",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 892,
+    "torque": 878,
+    "rangeKm": null,
+    "topSpeed": 371,
+    "acceleration": 3,
+    "rating": 4.2,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1605558202138-25ee2f30f07e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Level 2 Self-Driving Capability",
+      "Active Lane Keep Assist",
+      "Adaptive Cruise Control",
+      "LED Matrix Headlights",
+      "Wireless Apple CarPlay & Android Auto",
+      "Heated and Ventilated Seats",
+      "Voice-Activated Controls",
+      "Panoramic Glass Roof"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "340 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1554 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 32,
+    "name": "Citroen Prestige 40d",
+    "slug": "citroen-prestige-40d",
+    "brand": "Citroen",
+    "price": 163436,
+    "year": 2025,
+    "category": "SUV & Crossovers",
+    "fuelType": "Gasoline",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 645,
+    "torque": 820,
+    "rangeKm": null,
+    "topSpeed": 385,
+    "acceleration": 4.1,
+    "rating": 4.5,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1605558202138-25ee2f30f07e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Premium Surround Sound System",
+      "Heated and Ventilated Seats",
+      "Voice-Activated Controls",
+      "360 Degree Surround Camera",
+      "Active Lane Keep Assist",
+      "Panoramic Glass Roof",
+      "LED Matrix Headlights",
+      "Head-up HUD Display"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "616 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1502 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 33,
+    "name": "Subaru R-Design 50d",
+    "slug": "subaru-r-design-50d",
+    "brand": "Subaru",
+    "price": 196384,
+    "year": 2026,
+    "category": "Luxury Sedans",
+    "fuelType": "Hybrid",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 542,
+    "torque": 576,
+    "rangeKm": null,
+    "topSpeed": 403,
+    "acceleration": 6.1,
+    "rating": 4.4,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Dynamic Chassis Control",
+      "Adaptive Cruise Control",
+      "Level 2 Self-Driving Capability",
+      "360 Degree Surround Camera",
+      "LED Matrix Headlights",
+      "Head-up HUD Display",
+      "Heated and Ventilated Seats",
+      "Premium Surround Sound System"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 2,
+      "luggageCapacity": "492 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1985 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 34,
+    "name": "Koenigsegg Trident 70d",
+    "slug": "koenigsegg-trident-70d",
+    "brand": "Koenigsegg",
+    "price": 324528,
+    "year": 2024,
+    "category": "Off-Road & Adventure",
+    "fuelType": "Hybrid",
+    "transmission": "Manual",
+    "horsepower": 297,
+    "torque": 1177,
+    "rangeKm": null,
+    "topSpeed": 372,
+    "acceleration": 4.9,
+    "rating": 4.8,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Heated and Ventilated Seats",
+      "Adaptive Cruise Control",
+      "Voice-Activated Controls",
+      "Panoramic Glass Roof",
+      "Wireless Apple CarPlay & Android Auto",
+      "Dynamic Chassis Control",
+      "Active Lane Keep Assist",
+      "Head-up HUD Display"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 2,
+      "luggageCapacity": "341 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1613 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 35,
+    "name": "Lexus M Edition 90d",
+    "slug": "lexus-m-edition-90d",
+    "brand": "Lexus",
+    "price": 316054,
+    "year": 2026,
+    "category": "SUV & Crossovers",
+    "fuelType": "Hybrid",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 731,
+    "torque": 331,
+    "rangeKm": null,
+    "topSpeed": 312,
+    "acceleration": 6.1,
+    "rating": 4.2,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "360 Degree Surround Camera",
+      "Heated and Ventilated Seats",
+      "Premium Surround Sound System",
+      "Wireless Apple CarPlay & Android Auto",
+      "Level 2 Self-Driving Capability"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "378 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1629 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 36,
+    "name": "Genesis M Edition 80d",
+    "slug": "genesis-m-edition-80d",
+    "brand": "Genesis",
+    "price": 331724,
+    "year": 2025,
+    "category": "Off-Road & Adventure",
+    "fuelType": "Gasoline",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 480,
+    "torque": 748,
+    "rangeKm": null,
+    "topSpeed": 348,
+    "acceleration": 2,
+    "rating": 4.6,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Voice-Activated Controls",
+      "Heated and Ventilated Seats",
+      "Adaptive Cruise Control",
+      "Level 2 Self-Driving Capability",
+      "Dynamic Chassis Control",
+      "Head-up HUD Display"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "581 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2208 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 37,
+    "name": "Porsche R-Design 90d",
+    "slug": "porsche-r-design-90d",
+    "brand": "Porsche",
+    "price": 324657,
+    "year": 2027,
+    "category": "Luxury Sedans",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Dual-Clutch",
+    "horsepower": 770,
+    "torque": 611,
+    "rangeKm": 726,
+    "topSpeed": 311,
+    "acceleration": 3.4,
+    "rating": 4.5,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "LED Matrix Headlights",
+      "Active Lane Keep Assist",
+      "360 Degree Surround Camera",
+      "Wireless Apple CarPlay & Android Auto",
+      "Head-up HUD Display",
+      "Adaptive Cruise Control",
+      "Level 2 Self-Driving Capability"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 3,
+      "luggageCapacity": "627 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1509 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 38,
+    "name": "Lotus RS 60d",
+    "slug": "lotus-rs-60d",
+    "brand": "Lotus",
+    "price": 311660,
+    "year": 2026,
+    "category": "Supercars & Hypercars",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 344,
+    "torque": 841,
+    "rangeKm": 425,
+    "topSpeed": 360,
+    "acceleration": 5.4,
+    "rating": 4.6,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Premium Surround Sound System",
+      "Panoramic Glass Roof",
+      "Level 2 Self-Driving Capability",
+      "Adaptive Cruise Control",
+      "Dynamic Chassis Control",
+      "Active Lane Keep Assist"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "536 Liters",
+      "batteryCapacity": "88 kWh",
+      "weight": "1636 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 39,
+    "name": "Dodge RS 50d",
+    "slug": "dodge-rs-50d",
+    "brand": "Dodge",
+    "price": 335515,
+    "year": 2027,
+    "category": "Electric Vehicles",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 953,
+    "torque": 341,
+    "rangeKm": 568,
+    "topSpeed": 371,
+    "acceleration": 3.9,
+    "rating": 4.9,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Panoramic Glass Roof",
+      "Dynamic Chassis Control",
+      "Active Lane Keep Assist",
+      "Head-up HUD Display",
+      "360 Degree Surround Camera",
+      "Premium Surround Sound System"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 2,
+      "luggageCapacity": "499 Liters",
+      "batteryCapacity": "79 kWh",
+      "weight": "1508 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 40,
+    "name": "McLaren Turbo S 60d",
+    "slug": "mclaren-turbo-s-60d",
+    "brand": "McLaren",
+    "price": 57447,
+    "year": 2026,
+    "category": "Sports Coupes",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 389,
+    "torque": 1213,
+    "rangeKm": 564,
+    "topSpeed": 298,
+    "acceleration": 4.6,
+    "rating": 4.6,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Voice-Activated Controls",
+      "Level 2 Self-Driving Capability",
+      "Wireless Apple CarPlay & Android Auto",
+      "Panoramic Glass Roof",
+      "Dynamic Chassis Control",
+      "Premium Surround Sound System",
+      "360 Degree Surround Camera",
+      "LED Matrix Headlights"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 7,
+      "luggageCapacity": "462 Liters",
+      "batteryCapacity": "80 kWh",
+      "weight": "2338 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 41,
+    "name": "Infiniti M Edition 60d",
+    "slug": "infiniti-m-edition-60d",
+    "brand": "Infiniti",
+    "price": 246240,
+    "year": 2024,
+    "category": "Off-Road & Adventure",
+    "fuelType": "Hybrid",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 902,
+    "torque": 776,
+    "rangeKm": null,
+    "topSpeed": 286,
+    "acceleration": 4.3,
+    "rating": 4.8,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Panoramic Glass Roof",
+      "Premium Surround Sound System",
+      "Voice-Activated Controls",
+      "360 Degree Surround Camera",
+      "Active Lane Keep Assist",
+      "Head-up HUD Display",
+      "Heated and Ventilated Seats"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "459 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2001 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 42,
+    "name": "BMW Concept One 30d",
+    "slug": "bmw-concept-one-30d",
+    "brand": "BMW",
+    "price": 101251,
+    "year": 2024,
+    "category": "Sports Coupes",
+    "fuelType": "Diesel",
+    "transmission": "Manual",
+    "horsepower": 272,
+    "torque": 416,
+    "rangeKm": null,
+    "topSpeed": 379,
+    "acceleration": 5.3,
+    "rating": 4.8,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Level 2 Self-Driving Capability",
+      "Voice-Activated Controls",
+      "Wireless Apple CarPlay & Android Auto",
+      "Panoramic Glass Roof",
+      "Active Lane Keep Assist",
+      "LED Matrix Headlights",
+      "Dynamic Chassis Control",
+      "Head-up HUD Display"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 5,
+      "luggageCapacity": "610 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2074 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 43,
+    "name": "Mitsubishi Carbon 30d",
+    "slug": "mitsubishi-carbon-30d",
+    "brand": "Mitsubishi",
+    "price": 148734,
+    "year": 2026,
+    "category": "Hybrids",
+    "fuelType": "Hybrid",
+    "transmission": "Automatic",
+    "horsepower": 485,
+    "torque": 701,
+    "rangeKm": null,
+    "topSpeed": 341,
+    "acceleration": 5.1,
+    "rating": 4.7,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Voice-Activated Controls",
+      "Head-up HUD Display",
+      "Level 2 Self-Driving Capability",
+      "Heated and Ventilated Seats",
+      "Panoramic Glass Roof"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 5,
+      "luggageCapacity": "458 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1939 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 44,
+    "name": "Toyota Prestige 60d",
+    "slug": "toyota-prestige-60d",
+    "brand": "Toyota",
+    "price": 222251,
+    "year": 2026,
+    "category": "Off-Road & Adventure",
+    "fuelType": "Diesel",
+    "transmission": "Automatic",
+    "horsepower": 660,
+    "torque": 921,
+    "rangeKm": null,
+    "topSpeed": 315,
+    "acceleration": 3.4,
+    "rating": 4.9,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Premium Surround Sound System",
+      "Head-up HUD Display",
+      "Wireless Apple CarPlay & Android Auto",
+      "360 Degree Surround Camera",
+      "LED Matrix Headlights",
+      "Heated and Ventilated Seats",
+      "Voice-Activated Controls",
+      "Active Lane Keep Assist",
+      "Dynamic Chassis Control"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 5,
+      "luggageCapacity": "463 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2342 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 45,
+    "name": "Polestar Concept One 60d",
+    "slug": "polestar-concept-one-60d",
+    "brand": "Polestar",
+    "price": 322554,
+    "year": 2024,
+    "category": "Luxury Sedans",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Dual-Clutch",
+    "horsepower": 302,
+    "torque": 495,
+    "rangeKm": 485,
+    "topSpeed": 287,
+    "acceleration": 2.6,
+    "rating": 4.8,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Dynamic Chassis Control",
+      "Heated and Ventilated Seats",
+      "Wireless Apple CarPlay & Android Auto",
+      "Active Lane Keep Assist",
+      "360 Degree Surround Camera",
+      "Premium Surround Sound System",
+      "Adaptive Cruise Control",
+      "LED Matrix Headlights"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 2,
+      "luggageCapacity": "533 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1954 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 46,
+    "name": "Alfa Romeo R-Design 70d",
+    "slug": "alfa-romeo-r-design-70d",
+    "brand": "Alfa Romeo",
+    "price": 152360,
+    "year": 2027,
+    "category": "SUV & Crossovers",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Dual-Clutch",
+    "horsepower": 1063,
+    "torque": 764,
+    "rangeKm": 375,
+    "topSpeed": 393,
+    "acceleration": 4.6,
+    "rating": 4.5,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1605558202138-25ee2f30f07e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Heated and Ventilated Seats",
+      "Head-up HUD Display",
+      "360 Degree Surround Camera",
+      "LED Matrix Headlights",
+      "Premium Surround Sound System",
+      "Dynamic Chassis Control"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "379 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1545 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 47,
+    "name": "GMC Roadster 40d",
+    "slug": "gmc-roadster-40d",
+    "brand": "GMC",
+    "price": 125503,
+    "year": 2027,
+    "category": "Electric Vehicles",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 308,
+    "torque": 862,
+    "rangeKm": 644,
+    "topSpeed": 262,
+    "acceleration": 2.4,
+    "rating": 4.5,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1605558202138-25ee2f30f07e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Dynamic Chassis Control",
+      "Wireless Apple CarPlay & Android Auto",
+      "360 Degree Surround Camera",
+      "Level 2 Self-Driving Capability",
+      "LED Matrix Headlights"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "479 Liters",
+      "batteryCapacity": "86 kWh",
+      "weight": "2293 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 48,
+    "name": "Honda Performante 60d",
+    "slug": "honda-performante-60d",
+    "brand": "Honda",
+    "price": 243201,
+    "year": 2024,
+    "category": "Supercars & Hypercars",
+    "fuelType": "Hybrid",
+    "transmission": "Manual",
+    "horsepower": 1185,
+    "torque": 1262,
+    "rangeKm": null,
+    "topSpeed": 225,
+    "acceleration": 5.8,
+    "rating": 4.3,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1605558202138-25ee2f30f07e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Panoramic Glass Roof",
+      "Dynamic Chassis Control",
+      "360 Degree Surround Camera",
+      "Heated and Ventilated Seats",
+      "Wireless Apple CarPlay & Android Auto",
+      "Head-up HUD Display",
+      "Active Lane Keep Assist",
+      "Level 2 Self-Driving Capability"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 2,
+      "luggageCapacity": "301 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2311 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 49,
+    "name": "Rivian Prestige 50d",
+    "slug": "rivian-prestige-50d",
+    "brand": "Rivian",
+    "price": 112901,
+    "year": 2024,
+    "category": "Supercars & Hypercars",
+    "fuelType": "Diesel",
+    "transmission": "Automatic",
+    "horsepower": 916,
+    "torque": 378,
+    "rangeKm": null,
+    "topSpeed": 408,
+    "acceleration": 5.4,
+    "rating": 5,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Head-up HUD Display",
+      "Wireless Apple CarPlay & Android Auto",
+      "Premium Surround Sound System",
+      "Level 2 Self-Driving Capability",
+      "Dynamic Chassis Control"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 7,
+      "luggageCapacity": "601 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1652 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 50,
+    "name": "Ford Trident 70d",
+    "slug": "ford-trident-70d",
+    "brand": "Ford",
+    "price": 228328,
+    "year": 2024,
+    "category": "Off-Road & Adventure",
+    "fuelType": "Hybrid",
+    "transmission": "Dual-Clutch",
+    "horsepower": 486,
+    "torque": 783,
+    "rangeKm": null,
+    "topSpeed": 260,
+    "acceleration": 5.9,
+    "rating": 4.7,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "360 Degree Surround Camera",
+      "Adaptive Cruise Control",
+      "Heated and Ventilated Seats",
+      "LED Matrix Headlights",
+      "Premium Surround Sound System"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 7,
+      "luggageCapacity": "600 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1972 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 51,
+    "name": "Nissan Roadster 90d",
+    "slug": "nissan-roadster-90d",
+    "brand": "Nissan",
+    "price": 91908,
+    "year": 2024,
+    "category": "Sports Coupes",
+    "fuelType": "Gasoline",
+    "transmission": "Dual-Clutch",
+    "horsepower": 539,
+    "torque": 517,
+    "rangeKm": null,
+    "topSpeed": 299,
+    "acceleration": 3.5,
+    "rating": 4.2,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Level 2 Self-Driving Capability",
+      "LED Matrix Headlights",
+      "Heated and Ventilated Seats",
+      "360 Degree Surround Camera",
+      "Head-up HUD Display"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 7,
+      "luggageCapacity": "309 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1751 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 52,
+    "name": "Toyota Plaid 70d",
+    "slug": "toyota-plaid-70d",
+    "brand": "Toyota",
+    "price": 123759,
+    "year": 2025,
+    "category": "Hybrids",
+    "fuelType": "Hybrid",
+    "transmission": "Dual-Clutch",
+    "horsepower": 1009,
+    "torque": 757,
+    "rangeKm": null,
+    "topSpeed": 272,
+    "acceleration": 3.1,
+    "rating": 4.8,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Head-up HUD Display",
+      "Adaptive Cruise Control",
+      "Heated and Ventilated Seats",
+      "LED Matrix Headlights",
+      "360 Degree Surround Camera"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "649 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2360 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 53,
+    "name": "Ford Performante 40d",
+    "slug": "ford-performante-40d",
+    "brand": "Ford",
+    "price": 194453,
+    "year": 2027,
+    "category": "Off-Road & Adventure",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Dual-Clutch",
+    "horsepower": 1040,
+    "torque": 710,
+    "rangeKm": 439,
+    "topSpeed": 207,
+    "acceleration": 2.7,
+    "rating": 5,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Heated and Ventilated Seats",
+      "Voice-Activated Controls",
+      "Level 2 Self-Driving Capability",
+      "360 Degree Surround Camera"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "640 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1468 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 54,
+    "name": "GMC RS 70d",
+    "slug": "gmc-rs-70d",
+    "brand": "GMC",
+    "price": 211468,
+    "year": 2025,
+    "category": "Sports Coupes",
+    "fuelType": "Hybrid",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 460,
+    "torque": 358,
+    "rangeKm": null,
+    "topSpeed": 201,
+    "acceleration": 5.4,
+    "rating": 4.2,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Head-up HUD Display",
+      "Dynamic Chassis Control",
+      "Premium Surround Sound System",
+      "LED Matrix Headlights",
+      "Active Lane Keep Assist",
+      "360 Degree Surround Camera"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 3,
+      "luggageCapacity": "637 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1910 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 55,
+    "name": "Alfa Romeo Quadri 30d",
+    "slug": "alfa-romeo-quadri-30d",
+    "brand": "Alfa Romeo",
+    "price": 86136,
+    "year": 2025,
+    "category": "SUV & Crossovers",
+    "fuelType": "Gasoline",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 1123,
+    "torque": 504,
+    "rangeKm": null,
+    "topSpeed": 374,
+    "acceleration": 5.6,
+    "rating": 4.2,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Panoramic Glass Roof",
+      "Dynamic Chassis Control",
+      "Head-up HUD Display",
+      "LED Matrix Headlights",
+      "Level 2 Self-Driving Capability",
+      "Active Lane Keep Assist",
+      "Heated and Ventilated Seats",
+      "Voice-Activated Controls"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 7,
+      "luggageCapacity": "445 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2047 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 56,
+    "name": "Volvo GT 40d",
+    "slug": "volvo-gt-40d",
+    "brand": "Volvo",
+    "price": 267409,
+    "year": 2026,
+    "category": "Luxury Sedans",
+    "fuelType": "Diesel",
+    "transmission": "Automatic",
+    "horsepower": 775,
+    "torque": 433,
+    "rangeKm": null,
+    "topSpeed": 396,
+    "acceleration": 6.5,
+    "rating": 5,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Wireless Apple CarPlay & Android Auto",
+      "Heated and Ventilated Seats",
+      "LED Matrix Headlights",
+      "Premium Surround Sound System",
+      "Voice-Activated Controls"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 7,
+      "luggageCapacity": "374 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1581 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 57,
+    "name": "Lotus Performante 60d",
+    "slug": "lotus-performante-60d",
+    "brand": "Lotus",
+    "price": 252716,
+    "year": 2024,
+    "category": "Supercars & Hypercars",
+    "fuelType": "Hybrid",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 1183,
+    "torque": 980,
+    "rangeKm": null,
+    "topSpeed": 371,
+    "acceleration": 3.8,
+    "rating": 4.7,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Voice-Activated Controls",
+      "Wireless Apple CarPlay & Android Auto",
+      "Level 2 Self-Driving Capability",
+      "Heated and Ventilated Seats"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 5,
+      "luggageCapacity": "498 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2179 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 58,
+    "name": "Tesla Prestige 30d",
+    "slug": "tesla-prestige-30d",
+    "brand": "Tesla",
+    "price": 228449,
+    "year": 2024,
+    "category": "SUV & Crossovers",
+    "fuelType": "Gasoline",
+    "transmission": "Automatic",
+    "horsepower": 1082,
+    "torque": 342,
+    "rangeKm": null,
+    "topSpeed": 273,
+    "acceleration": 6.3,
+    "rating": 4.5,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Dynamic Chassis Control",
+      "LED Matrix Headlights",
+      "Head-up HUD Display",
+      "Active Lane Keep Assist",
+      "Panoramic Glass Roof",
+      "Wireless Apple CarPlay & Android Auto",
+      "Level 2 Self-Driving Capability"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "603 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2222 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 59,
+    "name": "Lucid Prestige 80d",
+    "slug": "lucid-prestige-80d",
+    "brand": "Lucid",
+    "price": 186769,
+    "year": 2026,
+    "category": "Supercars & Hypercars",
+    "fuelType": "Hybrid",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 1147,
+    "torque": 1212,
+    "rangeKm": null,
+    "topSpeed": 338,
+    "acceleration": 2.9,
+    "rating": 4.8,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Panoramic Glass Roof",
+      "Premium Surround Sound System",
+      "Adaptive Cruise Control",
+      "Head-up HUD Display",
+      "Voice-Activated Controls"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "458 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2279 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 60,
+    "name": "Lincoln Plaid 30d",
+    "slug": "lincoln-plaid-30d",
+    "brand": "Lincoln",
+    "price": 322562,
+    "year": 2025,
+    "category": "Hybrids",
+    "fuelType": "Hybrid",
+    "transmission": "Manual",
+    "horsepower": 672,
+    "torque": 1265,
+    "rangeKm": null,
+    "topSpeed": 335,
+    "acceleration": 3.5,
+    "rating": 4.4,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Voice-Activated Controls",
+      "Dynamic Chassis Control",
+      "Premium Surround Sound System",
+      "Heated and Ventilated Seats",
+      "Wireless Apple CarPlay & Android Auto",
+      "Level 2 Self-Driving Capability"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 2,
+      "luggageCapacity": "583 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2292 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 61,
+    "name": "Aston Martin Concept One 60d",
+    "slug": "aston-martin-concept-one-60d",
+    "brand": "Aston Martin",
+    "price": 159093,
+    "year": 2027,
+    "category": "Sports Coupes",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 1078,
+    "torque": 1132,
+    "rangeKm": 489,
+    "topSpeed": 378,
+    "acceleration": 6.2,
+    "rating": 4.3,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Active Lane Keep Assist",
+      "Level 2 Self-Driving Capability",
+      "Voice-Activated Controls",
+      "Heated and Ventilated Seats"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "316 Liters",
+      "batteryCapacity": "91 kWh",
+      "weight": "1401 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 62,
+    "name": "Subaru M Edition 80d",
+    "slug": "subaru-m-edition-80d",
+    "brand": "Subaru",
+    "price": 280829,
+    "year": 2025,
+    "category": "Luxury Sedans",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 934,
+    "torque": 707,
+    "rangeKm": 709,
+    "topSpeed": 395,
+    "acceleration": 3.9,
+    "rating": 4.8,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1605558202138-25ee2f30f07e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Heated and Ventilated Seats",
+      "360 Degree Surround Camera",
+      "LED Matrix Headlights",
+      "Panoramic Glass Roof",
+      "Premium Surround Sound System",
+      "Dynamic Chassis Control"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "609 Liters",
+      "batteryCapacity": "75 kWh",
+      "weight": "2110 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 63,
+    "name": "Ferrari Veloce 30d",
+    "slug": "ferrari-veloce-30d",
+    "brand": "Ferrari",
+    "price": 180822,
+    "year": 2027,
+    "category": "Sports Coupes",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Manual",
+    "horsepower": 824,
+    "torque": 1179,
+    "rangeKm": 518,
+    "topSpeed": 275,
+    "acceleration": 5.9,
+    "rating": 5,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1605558202138-25ee2f30f07e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Premium Surround Sound System",
+      "360 Degree Surround Camera",
+      "Head-up HUD Display",
+      "Heated and Ventilated Seats",
+      "Dynamic Chassis Control",
+      "Panoramic Glass Roof"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 3,
+      "luggageCapacity": "557 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2348 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 64,
+    "name": "Ferrari Trek 40d",
+    "slug": "ferrari-trek-40d",
+    "brand": "Ferrari",
+    "price": 58921,
+    "year": 2024,
+    "category": "Hybrids",
+    "fuelType": "Hybrid",
+    "transmission": "Dual-Clutch",
+    "horsepower": 660,
+    "torque": 1057,
+    "rangeKm": null,
+    "topSpeed": 278,
+    "acceleration": 3,
+    "rating": 4.3,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1605558202138-25ee2f30f07e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Head-up HUD Display",
+      "Wireless Apple CarPlay & Android Auto",
+      "Dynamic Chassis Control",
+      "Premium Surround Sound System",
+      "Active Lane Keep Assist",
+      "360 Degree Surround Camera",
+      "Voice-Activated Controls",
+      "Panoramic Glass Roof",
+      "Heated and Ventilated Seats"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 7,
+      "luggageCapacity": "386 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1601 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 65,
+    "name": "Lexus M Edition 90d",
+    "slug": "lexus-m-edition-90d",
+    "brand": "Lexus",
+    "price": 227574,
+    "year": 2025,
+    "category": "Hybrids",
+    "fuelType": "Hybrid",
+    "transmission": "Manual",
+    "horsepower": 1091,
+    "torque": 478,
+    "rangeKm": null,
+    "topSpeed": 381,
+    "acceleration": 2.7,
+    "rating": 4.3,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Heated and Ventilated Seats",
+      "Active Lane Keep Assist",
+      "Panoramic Glass Roof",
+      "LED Matrix Headlights",
+      "Voice-Activated Controls",
+      "Level 2 Self-Driving Capability",
+      "360 Degree Surround Camera"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "453 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2298 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 66,
+    "name": "Genesis Trek 60d",
+    "slug": "genesis-trek-60d",
+    "brand": "Genesis",
+    "price": 194863,
+    "year": 2027,
+    "category": "Electric Vehicles",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 853,
+    "torque": 1037,
+    "rangeKm": 628,
+    "topSpeed": 229,
+    "acceleration": 6.4,
+    "rating": 4.3,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Active Lane Keep Assist",
+      "LED Matrix Headlights",
+      "Panoramic Glass Roof",
+      "Wireless Apple CarPlay & Android Auto",
+      "Level 2 Self-Driving Capability",
+      "Voice-Activated Controls"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 5,
+      "luggageCapacity": "343 Liters",
+      "batteryCapacity": "93 kWh",
+      "weight": "1760 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 67,
+    "name": "Citroen Trident 30d",
+    "slug": "citroen-trident-30d",
+    "brand": "Citroen",
+    "price": 71184,
+    "year": 2026,
+    "category": "Supercars & Hypercars",
+    "fuelType": "Gasoline",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 501,
+    "torque": 324,
+    "rangeKm": null,
+    "topSpeed": 373,
+    "acceleration": 6.3,
+    "rating": 4.4,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Voice-Activated Controls",
+      "360 Degree Surround Camera",
+      "Adaptive Cruise Control",
+      "Heated and Ventilated Seats",
+      "Active Lane Keep Assist",
+      "LED Matrix Headlights",
+      "Panoramic Glass Roof",
+      "Premium Surround Sound System"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 7,
+      "luggageCapacity": "403 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1925 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 68,
+    "name": "Nissan Veloce 40d",
+    "slug": "nissan-veloce-40d",
+    "brand": "Nissan",
+    "price": 271657,
+    "year": 2026,
+    "category": "Electric Vehicles",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 589,
+    "torque": 379,
+    "rangeKm": 457,
+    "topSpeed": 247,
+    "acceleration": 3.2,
+    "rating": 4.7,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Active Lane Keep Assist",
+      "Heated and Ventilated Seats",
+      "Dynamic Chassis Control",
+      "Level 2 Self-Driving Capability",
+      "Voice-Activated Controls",
+      "Panoramic Glass Roof",
+      "Premium Surround Sound System",
+      "Wireless Apple CarPlay & Android Auto",
+      "LED Matrix Headlights"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "622 Liters",
+      "batteryCapacity": "106 kWh",
+      "weight": "2187 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 69,
+    "name": "Bugatti SV 70d",
+    "slug": "bugatti-sv-70d",
+    "brand": "Bugatti",
+    "price": 279266,
+    "year": 2024,
+    "category": "Supercars & Hypercars",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 297,
+    "torque": 1108,
+    "rangeKm": 608,
+    "topSpeed": 346,
+    "acceleration": 4.3,
+    "rating": 4.5,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Heated and Ventilated Seats",
+      "Adaptive Cruise Control",
+      "Voice-Activated Controls",
+      "Wireless Apple CarPlay & Android Auto",
+      "Level 2 Self-Driving Capability"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "558 Liters",
+      "batteryCapacity": "101 kWh",
+      "weight": "2099 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 70,
+    "name": "Rolls-Royce S 60d",
+    "slug": "rolls-royce-s-60d",
+    "brand": "Rolls-Royce",
+    "price": 81065,
+    "year": 2025,
+    "category": "Sports Coupes",
+    "fuelType": "Hybrid",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 402,
+    "torque": 1141,
+    "rangeKm": null,
+    "topSpeed": 253,
+    "acceleration": 2.5,
+    "rating": 4.8,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Wireless Apple CarPlay & Android Auto",
+      "Premium Surround Sound System",
+      "Head-up HUD Display",
+      "360 Degree Surround Camera",
+      "LED Matrix Headlights",
+      "Heated and Ventilated Seats"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "375 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1462 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 71,
+    "name": "Lincoln Concept One 50d",
+    "slug": "lincoln-concept-one-50d",
+    "brand": "Lincoln",
+    "price": 92380,
+    "year": 2024,
+    "category": "Off-Road & Adventure",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Automatic",
+    "horsepower": 714,
+    "torque": 355,
+    "rangeKm": 409,
+    "topSpeed": 259,
+    "acceleration": 3.3,
+    "rating": 4.9,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Voice-Activated Controls",
+      "Head-up HUD Display",
+      "Adaptive Cruise Control",
+      "Heated and Ventilated Seats",
+      "LED Matrix Headlights",
+      "Dynamic Chassis Control",
+      "Active Lane Keep Assist",
+      "360 Degree Surround Camera"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "599 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1834 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 72,
+    "name": "Aston Martin SV 40d",
+    "slug": "aston-martin-sv-40d",
+    "brand": "Aston Martin",
+    "price": 255463,
+    "year": 2026,
+    "category": "Luxury Sedans",
+    "fuelType": "Gasoline",
+    "transmission": "Manual",
+    "horsepower": 554,
+    "torque": 663,
+    "rangeKm": null,
+    "topSpeed": 328,
+    "acceleration": 3.6,
+    "rating": 4.9,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Wireless Apple CarPlay & Android Auto",
+      "Premium Surround Sound System",
+      "Adaptive Cruise Control",
+      "Head-up HUD Display",
+      "Voice-Activated Controls",
+      "Level 2 Self-Driving Capability",
+      "Panoramic Glass Roof",
+      "Active Lane Keep Assist",
+      "360 Degree Surround Camera"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 5,
+      "luggageCapacity": "514 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2051 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 73,
+    "name": "Ford Quadri 50d",
+    "slug": "ford-quadri-50d",
+    "brand": "Ford",
+    "price": 278362,
+    "year": 2027,
+    "category": "Supercars & Hypercars",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 526,
+    "torque": 1039,
+    "rangeKm": 487,
+    "topSpeed": 408,
+    "acceleration": 4.6,
+    "rating": 5,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Premium Surround Sound System",
+      "360 Degree Surround Camera",
+      "Heated and Ventilated Seats",
+      "Active Lane Keep Assist",
+      "Panoramic Glass Roof",
+      "Adaptive Cruise Control",
+      "Dynamic Chassis Control",
+      "Level 2 Self-Driving Capability"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 2,
+      "luggageCapacity": "349 Liters",
+      "batteryCapacity": "115 kWh",
+      "weight": "2169 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 74,
+    "name": "Honda Trek 70d",
+    "slug": "honda-trek-70d",
+    "brand": "Honda",
+    "price": 170834,
+    "year": 2025,
+    "category": "Luxury Sedans",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 877,
+    "torque": 439,
+    "rangeKm": 496,
+    "topSpeed": 405,
+    "acceleration": 2.3,
+    "rating": 4.8,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Voice-Activated Controls",
+      "Dynamic Chassis Control",
+      "Active Lane Keep Assist",
+      "Panoramic Glass Roof",
+      "360 Degree Surround Camera",
+      "Head-up HUD Display",
+      "Premium Surround Sound System"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "314 Liters",
+      "batteryCapacity": "81 kWh",
+      "weight": "2041 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 75,
+    "name": "Lotus Veloce 50d",
+    "slug": "lotus-veloce-50d",
+    "brand": "Lotus",
+    "price": 149187,
+    "year": 2027,
+    "category": "Hybrids",
+    "fuelType": "Hybrid",
+    "transmission": "Dual-Clutch",
+    "horsepower": 354,
+    "torque": 770,
+    "rangeKm": null,
+    "topSpeed": 358,
+    "acceleration": 5.9,
+    "rating": 4.9,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Panoramic Glass Roof",
+      "Adaptive Cruise Control",
+      "Heated and Ventilated Seats",
+      "Wireless Apple CarPlay & Android Auto",
+      "360 Degree Surround Camera",
+      "Premium Surround Sound System"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 5,
+      "luggageCapacity": "646 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2136 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 76,
+    "name": "Jeep Quadrifoglio 30d",
+    "slug": "jeep-quadrifoglio-30d",
+    "brand": "Jeep",
+    "price": 86191,
+    "year": 2027,
+    "category": "Off-Road & Adventure",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 704,
+    "torque": 609,
+    "rangeKm": 457,
+    "topSpeed": 246,
+    "acceleration": 4.5,
+    "rating": 4.2,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Premium Surround Sound System",
+      "Dynamic Chassis Control",
+      "360 Degree Surround Camera",
+      "Wireless Apple CarPlay & Android Auto",
+      "Level 2 Self-Driving Capability",
+      "Heated and Ventilated Seats",
+      "Adaptive Cruise Control",
+      "Active Lane Keep Assist"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 3,
+      "luggageCapacity": "407 Liters",
+      "batteryCapacity": "111 kWh",
+      "weight": "1947 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 77,
+    "name": "Volvo F-Type 80d",
+    "slug": "volvo-f-type-80d",
+    "brand": "Volvo",
+    "price": 239854,
+    "year": 2026,
+    "category": "Sports Coupes",
+    "fuelType": "Gasoline",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 735,
+    "torque": 940,
+    "rangeKm": null,
+    "topSpeed": 320,
+    "acceleration": 6.3,
+    "rating": 4.5,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "360 Degree Surround Camera",
+      "Adaptive Cruise Control",
+      "Voice-Activated Controls",
+      "LED Matrix Headlights",
+      "Level 2 Self-Driving Capability"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "310 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1824 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 78,
+    "name": "Rimac S 80d",
+    "slug": "rimac-s-80d",
+    "brand": "Rimac",
+    "price": 193732,
+    "year": 2027,
+    "category": "Off-Road & Adventure",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 907,
+    "torque": 786,
+    "rangeKm": 427,
+    "topSpeed": 257,
+    "acceleration": 3,
+    "rating": 4.5,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1605558202138-25ee2f30f07e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Dynamic Chassis Control",
+      "Adaptive Cruise Control",
+      "LED Matrix Headlights",
+      "Heated and Ventilated Seats",
+      "Wireless Apple CarPlay & Android Auto",
+      "Panoramic Glass Roof",
+      "Voice-Activated Controls",
+      "Premium Surround Sound System",
+      "Active Lane Keep Assist"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 3,
+      "luggageCapacity": "508 Liters",
+      "batteryCapacity": "102 kWh",
+      "weight": "2269 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 79,
+    "name": "Polestar Apex 70d",
+    "slug": "polestar-apex-70d",
+    "brand": "Polestar",
+    "price": 178440,
+    "year": 2025,
+    "category": "Electric Vehicles",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 1146,
+    "torque": 586,
+    "rangeKm": 712,
+    "topSpeed": 206,
+    "acceleration": 2.7,
+    "rating": 4.9,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1605558202138-25ee2f30f07e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Premium Surround Sound System",
+      "Adaptive Cruise Control",
+      "Voice-Activated Controls",
+      "LED Matrix Headlights",
+      "Active Lane Keep Assist",
+      "Dynamic Chassis Control",
+      "Level 2 Self-Driving Capability",
+      "Panoramic Glass Roof",
+      "Heated and Ventilated Seats"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 7,
+      "luggageCapacity": "402 Liters",
+      "batteryCapacity": "89 kWh",
+      "weight": "2161 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 80,
+    "name": "Tesla SV 60d",
+    "slug": "tesla-sv-60d",
+    "brand": "Tesla",
+    "price": 50714,
+    "year": 2024,
+    "category": "Luxury Sedans",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Automatic",
+    "horsepower": 530,
+    "torque": 817,
+    "rangeKm": 693,
+    "topSpeed": 360,
+    "acceleration": 4.3,
+    "rating": 4.4,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1605558202138-25ee2f30f07e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "360 Degree Surround Camera",
+      "Premium Surround Sound System",
+      "Panoramic Glass Roof",
+      "Voice-Activated Controls",
+      "Head-up HUD Display",
+      "Dynamic Chassis Control",
+      "Level 2 Self-Driving Capability",
+      "Active Lane Keep Assist",
+      "Heated and Ventilated Seats"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "499 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2096 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 81,
+    "name": "Rolls-Royce SV 40d",
+    "slug": "rolls-royce-sv-40d",
+    "brand": "Rolls-Royce",
+    "price": 106288,
+    "year": 2027,
+    "category": "Luxury Sedans",
+    "fuelType": "Hybrid",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 651,
+    "torque": 867,
+    "rangeKm": null,
+    "topSpeed": 336,
+    "acceleration": 5.9,
+    "rating": 4.9,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "LED Matrix Headlights",
+      "Heated and Ventilated Seats",
+      "360 Degree Surround Camera",
+      "Premium Surround Sound System",
+      "Wireless Apple CarPlay & Android Auto",
+      "Active Lane Keep Assist",
+      "Voice-Activated Controls",
+      "Adaptive Cruise Control"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 3,
+      "luggageCapacity": "443 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1707 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 82,
+    "name": "Pagani Concept One 90d",
+    "slug": "pagani-concept-one-90d",
+    "brand": "Pagani",
+    "price": 294218,
+    "year": 2026,
+    "category": "Hybrids",
+    "fuelType": "Hybrid",
+    "transmission": "Manual",
+    "horsepower": 709,
+    "torque": 485,
+    "rangeKm": null,
+    "topSpeed": 261,
+    "acceleration": 2.7,
+    "rating": 4.3,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Heated and Ventilated Seats",
+      "LED Matrix Headlights",
+      "Active Lane Keep Assist",
+      "Level 2 Self-Driving Capability",
+      "Dynamic Chassis Control"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 5,
+      "luggageCapacity": "546 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1548 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 83,
+    "name": "GMC M Edition 30d",
+    "slug": "gmc-m-edition-30d",
+    "brand": "GMC",
+    "price": 214434,
+    "year": 2027,
+    "category": "Sports Coupes",
+    "fuelType": "Diesel",
+    "transmission": "Manual",
+    "horsepower": 974,
+    "torque": 1159,
+    "rangeKm": null,
+    "topSpeed": 305,
+    "acceleration": 3.5,
+    "rating": 4.7,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "360 Degree Surround Camera",
+      "Dynamic Chassis Control",
+      "Panoramic Glass Roof",
+      "Wireless Apple CarPlay & Android Auto",
+      "Premium Surround Sound System",
+      "Level 2 Self-Driving Capability",
+      "LED Matrix Headlights"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "488 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2048 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 84,
+    "name": "Corvette S 90d",
+    "slug": "corvette-s-90d",
+    "brand": "Corvette",
+    "price": 180807,
+    "year": 2027,
+    "category": "SUV & Crossovers",
+    "fuelType": "Hybrid",
+    "transmission": "Manual",
+    "horsepower": 528,
+    "torque": 387,
+    "rangeKm": null,
+    "topSpeed": 244,
+    "acceleration": 5.2,
+    "rating": 4.7,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Premium Surround Sound System",
+      "360 Degree Surround Camera",
+      "Panoramic Glass Roof",
+      "Wireless Apple CarPlay & Android Auto",
+      "Heated and Ventilated Seats"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 7,
+      "luggageCapacity": "641 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1982 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 85,
+    "name": "Lucid Turbo S 80d",
+    "slug": "lucid-turbo-s-80d",
+    "brand": "Lucid",
+    "price": 141048,
+    "year": 2027,
+    "category": "Hybrids",
+    "fuelType": "Hybrid",
+    "transmission": "Automatic",
+    "horsepower": 975,
+    "torque": 1285,
+    "rangeKm": null,
+    "topSpeed": 353,
+    "acceleration": 4.2,
+    "rating": 4.7,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Active Lane Keep Assist",
+      "Wireless Apple CarPlay & Android Auto",
+      "Head-up HUD Display",
+      "LED Matrix Headlights",
+      "Panoramic Glass Roof",
+      "Dynamic Chassis Control",
+      "Premium Surround Sound System"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 2,
+      "luggageCapacity": "649 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1914 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 86,
+    "name": "Land Rover Trek 30d",
+    "slug": "land-rover-trek-30d",
+    "brand": "Land Rover",
+    "price": 146385,
+    "year": 2026,
+    "category": "Hybrids",
+    "fuelType": "Hybrid",
+    "transmission": "Automatic",
+    "horsepower": 527,
+    "torque": 1210,
+    "rangeKm": null,
+    "topSpeed": 253,
+    "acceleration": 5.7,
+    "rating": 4.5,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Voice-Activated Controls",
+      "LED Matrix Headlights",
+      "Premium Surround Sound System",
+      "Active Lane Keep Assist",
+      "Dynamic Chassis Control",
+      "Adaptive Cruise Control",
+      "Heated and Ventilated Seats"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 2,
+      "luggageCapacity": "582 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2169 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 87,
+    "name": "Renault Veloce 80d",
+    "slug": "renault-veloce-80d",
+    "brand": "Renault",
+    "price": 281159,
+    "year": 2024,
+    "category": "Sports Coupes",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 1097,
+    "torque": 1179,
+    "rangeKm": 596,
+    "topSpeed": 277,
+    "acceleration": 3.9,
+    "rating": 4.5,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Active Lane Keep Assist",
+      "Head-up HUD Display",
+      "Heated and Ventilated Seats",
+      "360 Degree Surround Camera",
+      "Premium Surround Sound System",
+      "Dynamic Chassis Control",
+      "LED Matrix Headlights",
+      "Wireless Apple CarPlay & Android Auto"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 5,
+      "luggageCapacity": "462 Liters",
+      "batteryCapacity": "80 kWh",
+      "weight": "1675 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 88,
+    "name": "Corvette Polestar 3 70d",
+    "slug": "corvette-polestar-3-70d",
+    "brand": "Corvette",
+    "price": 314323,
+    "year": 2027,
+    "category": "Supercars & Hypercars",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 910,
+    "torque": 523,
+    "rangeKm": 388,
+    "topSpeed": 315,
+    "acceleration": 6,
+    "rating": 4.5,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Panoramic Glass Roof",
+      "Dynamic Chassis Control",
+      "Premium Surround Sound System",
+      "Active Lane Keep Assist",
+      "LED Matrix Headlights",
+      "Head-up HUD Display",
+      "Voice-Activated Controls",
+      "360 Degree Surround Camera"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "367 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2056 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 89,
+    "name": "Chevrolet Trek 90d",
+    "slug": "chevrolet-trek-90d",
+    "brand": "Chevrolet",
+    "price": 65297,
+    "year": 2027,
+    "category": "Electric Vehicles",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 936,
+    "torque": 1283,
+    "rangeKm": 689,
+    "topSpeed": 255,
+    "acceleration": 5,
+    "rating": 4.4,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Active Lane Keep Assist",
+      "Heated and Ventilated Seats",
+      "360 Degree Surround Camera",
+      "Premium Surround Sound System",
+      "Dynamic Chassis Control",
+      "Level 2 Self-Driving Capability",
+      "LED Matrix Headlights"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 7,
+      "luggageCapacity": "640 Liters",
+      "batteryCapacity": "102 kWh",
+      "weight": "1982 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 90,
+    "name": "Acura Trident 80d",
+    "slug": "acura-trident-80d",
+    "brand": "Acura",
+    "price": 247925,
+    "year": 2025,
+    "category": "Supercars & Hypercars",
+    "fuelType": "Diesel",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 1060,
+    "torque": 1175,
+    "rangeKm": null,
+    "topSpeed": 243,
+    "acceleration": 2.3,
+    "rating": 4.9,
+    "featured": true,
+    "images": [
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Voice-Activated Controls",
+      "Wireless Apple CarPlay & Android Auto",
+      "Premium Surround Sound System",
+      "Active Lane Keep Assist",
+      "Adaptive Cruise Control",
+      "Head-up HUD Display",
+      "Panoramic Glass Roof"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 2,
+      "luggageCapacity": "516 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1525 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 91,
+    "name": "Aston Martin Quadrifoglio 60d",
+    "slug": "aston-martin-quadrifoglio-60d",
+    "brand": "Aston Martin",
+    "price": 347182,
+    "year": 2025,
+    "category": "Luxury Sedans",
+    "fuelType": "Diesel",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 375,
+    "torque": 538,
+    "rangeKm": null,
+    "topSpeed": 407,
+    "acceleration": 6.4,
+    "rating": 4.4,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Panoramic Glass Roof",
+      "LED Matrix Headlights",
+      "Premium Surround Sound System",
+      "Head-up HUD Display",
+      "Active Lane Keep Assist",
+      "Wireless Apple CarPlay & Android Auto"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "338 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2299 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 92,
+    "name": "Genesis Roadster 30d",
+    "slug": "genesis-roadster-30d",
+    "brand": "Genesis",
+    "price": 252899,
+    "year": 2024,
+    "category": "Luxury Sedans",
+    "fuelType": "Gasoline",
+    "transmission": "Dual-Clutch",
+    "horsepower": 1001,
+    "torque": 1277,
+    "rangeKm": null,
+    "topSpeed": 359,
+    "acceleration": 2.7,
+    "rating": 4.4,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "360 Degree Surround Camera",
+      "Heated and Ventilated Seats",
+      "Active Lane Keep Assist",
+      "Panoramic Glass Roof",
+      "Dynamic Chassis Control",
+      "Level 2 Self-Driving Capability",
+      "Adaptive Cruise Control",
+      "Premium Surround Sound System"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 2,
+      "luggageCapacity": "397 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1514 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 93,
+    "name": "Polestar Performante 40d",
+    "slug": "polestar-performante-40d",
+    "brand": "Polestar",
+    "price": 342533,
+    "year": 2025,
+    "category": "Hybrids",
+    "fuelType": "Hybrid",
+    "transmission": "Dual-Clutch",
+    "horsepower": 1063,
+    "torque": 910,
+    "rangeKm": null,
+    "topSpeed": 258,
+    "acceleration": 3.7,
+    "rating": 4.3,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "360 Degree Surround Camera",
+      "Head-up HUD Display",
+      "Premium Surround Sound System",
+      "Voice-Activated Controls",
+      "Active Lane Keep Assist",
+      "Level 2 Self-Driving Capability",
+      "Panoramic Glass Roof",
+      "LED Matrix Headlights",
+      "Heated and Ventilated Seats"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 7,
+      "luggageCapacity": "476 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2354 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 94,
+    "name": "Acura Prestige 30d",
+    "slug": "acura-prestige-30d",
+    "brand": "Acura",
+    "price": 199983,
+    "year": 2027,
+    "category": "Sports Coupes",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 727,
+    "torque": 933,
+    "rangeKm": 458,
+    "topSpeed": 295,
+    "acceleration": 5.8,
+    "rating": 4.3,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1605558202138-25ee2f30f07e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Dynamic Chassis Control",
+      "360 Degree Surround Camera",
+      "Adaptive Cruise Control",
+      "Heated and Ventilated Seats",
+      "Voice-Activated Controls",
+      "Premium Surround Sound System",
+      "Level 2 Self-Driving Capability",
+      "LED Matrix Headlights"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "380 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1556 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 95,
+    "name": "Porsche Trident 60d",
+    "slug": "porsche-trident-60d",
+    "brand": "Porsche",
+    "price": 308880,
+    "year": 2027,
+    "category": "Sports Coupes",
+    "fuelType": "Gasoline",
+    "transmission": "Manual",
+    "horsepower": 859,
+    "torque": 674,
+    "rangeKm": null,
+    "topSpeed": 385,
+    "acceleration": 5.6,
+    "rating": 4.7,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1605558202138-25ee2f30f07e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Head-up HUD Display",
+      "Level 2 Self-Driving Capability",
+      "Premium Surround Sound System",
+      "LED Matrix Headlights",
+      "Voice-Activated Controls",
+      "360 Degree Surround Camera"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 7,
+      "luggageCapacity": "637 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2090 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 96,
+    "name": "Infiniti Veloce 90d",
+    "slug": "infiniti-veloce-90d",
+    "brand": "Infiniti",
+    "price": 316502,
+    "year": 2025,
+    "category": "Supercars & Hypercars",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Manual",
+    "horsepower": 1180,
+    "torque": 600,
+    "rangeKm": 678,
+    "topSpeed": 274,
+    "acceleration": 2.3,
+    "rating": 4.8,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1605558202138-25ee2f30f07e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "360 Degree Surround Camera",
+      "LED Matrix Headlights",
+      "Panoramic Glass Roof",
+      "Heated and Ventilated Seats",
+      "Level 2 Self-Driving Capability",
+      "Wireless Apple CarPlay & Android Auto",
+      "Dynamic Chassis Control",
+      "Adaptive Cruise Control"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "466 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1755 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 97,
+    "name": "Jaguar Concept One 90d",
+    "slug": "jaguar-concept-one-90d",
+    "brand": "Jaguar",
+    "price": 296943,
+    "year": 2026,
+    "category": "SUV & Crossovers",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Manual",
+    "horsepower": 1160,
+    "torque": 1297,
+    "rangeKm": 626,
+    "topSpeed": 272,
+    "acceleration": 2.4,
+    "rating": 4.7,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Adaptive Cruise Control",
+      "Premium Surround Sound System",
+      "Wireless Apple CarPlay & Android Auto",
+      "Panoramic Glass Roof",
+      "Active Lane Keep Assist",
+      "Voice-Activated Controls",
+      "Level 2 Self-Driving Capability",
+      "Dynamic Chassis Control",
+      "Heated and Ventilated Seats"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 5,
+      "luggageCapacity": "484 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1895 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 98,
+    "name": "Hyundai Quadrifoglio 70d",
+    "slug": "hyundai-quadrifoglio-70d",
+    "brand": "Hyundai",
+    "price": 180924,
+    "year": 2024,
+    "category": "SUV & Crossovers",
+    "fuelType": "Diesel",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 325,
+    "torque": 1247,
+    "rangeKm": null,
+    "topSpeed": 245,
+    "acceleration": 5.6,
+    "rating": 4.3,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "360 Degree Surround Camera",
+      "Heated and Ventilated Seats",
+      "Wireless Apple CarPlay & Android Auto",
+      "LED Matrix Headlights",
+      "Dynamic Chassis Control",
+      "Premium Surround Sound System"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 3,
+      "luggageCapacity": "537 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1638 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 99,
+    "name": "Polestar Plaid 80d",
+    "slug": "polestar-plaid-80d",
+    "brand": "Polestar",
+    "price": 87707,
+    "year": 2025,
+    "category": "SUV & Crossovers",
+    "fuelType": "Diesel",
+    "transmission": "Manual",
+    "horsepower": 607,
+    "torque": 1079,
+    "rangeKm": null,
+    "topSpeed": 326,
+    "acceleration": 2,
+    "rating": 4.3,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Heated and Ventilated Seats",
+      "Level 2 Self-Driving Capability",
+      "Panoramic Glass Roof",
+      "Adaptive Cruise Control",
+      "Active Lane Keep Assist",
+      "Premium Surround Sound System",
+      "Dynamic Chassis Control",
+      "360 Degree Surround Camera",
+      "Head-up HUD Display"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "617 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1568 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 100,
+    "name": "Lotus Performante 50d",
+    "slug": "lotus-performante-50d",
+    "brand": "Lotus",
+    "price": 341490,
+    "year": 2024,
+    "category": "Supercars & Hypercars",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Manual",
+    "horsepower": 664,
+    "torque": 306,
+    "rangeKm": 426,
+    "topSpeed": 344,
+    "acceleration": 5.8,
+    "rating": 4.7,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Premium Surround Sound System",
+      "360 Degree Surround Camera",
+      "Active Lane Keep Assist",
+      "Head-up HUD Display",
+      "LED Matrix Headlights",
+      "Wireless Apple CarPlay & Android Auto",
+      "Panoramic Glass Roof",
+      "Heated and Ventilated Seats"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "413 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2344 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 101,
+    "name": "Jeep SV 50d",
+    "slug": "jeep-sv-50d",
+    "brand": "Jeep",
+    "price": 313206,
+    "year": 2027,
+    "category": "Hybrids",
+    "fuelType": "Hybrid",
+    "transmission": "Automatic",
+    "horsepower": 843,
+    "torque": 356,
+    "rangeKm": null,
+    "topSpeed": 361,
+    "acceleration": 5.4,
+    "rating": 4.9,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Panoramic Glass Roof",
+      "Wireless Apple CarPlay & Android Auto",
+      "Level 2 Self-Driving Capability",
+      "Adaptive Cruise Control",
+      "LED Matrix Headlights",
+      "Heated and Ventilated Seats",
+      "Head-up HUD Display"
+    ],
+    "specifications": {
+      "drivetrain": "RWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "322 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1985 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 102,
+    "name": "Subaru Prestige 60d",
+    "slug": "subaru-prestige-60d",
+    "brand": "Subaru",
+    "price": 117817,
+    "year": 2027,
+    "category": "Hybrids",
+    "fuelType": "Hybrid",
+    "transmission": "Automatic",
+    "horsepower": 434,
+    "torque": 873,
+    "rangeKm": null,
+    "topSpeed": 252,
+    "acceleration": 4.9,
+    "rating": 4.5,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Premium Surround Sound System",
+      "360 Degree Surround Camera",
+      "Panoramic Glass Roof",
+      "Head-up HUD Display",
+      "LED Matrix Headlights"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "645 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1712 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 103,
+    "name": "Infiniti Veloce 50d",
+    "slug": "infiniti-veloce-50d",
+    "brand": "Infiniti",
+    "price": 296855,
+    "year": 2026,
+    "category": "Hybrids",
+    "fuelType": "Hybrid",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 1110,
+    "torque": 680,
+    "rangeKm": null,
+    "topSpeed": 382,
+    "acceleration": 2.4,
+    "rating": 4.9,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Heated and Ventilated Seats",
+      "Premium Surround Sound System",
+      "Voice-Activated Controls",
+      "Level 2 Self-Driving Capability",
+      "Dynamic Chassis Control",
+      "Adaptive Cruise Control",
+      "Wireless Apple CarPlay & Android Auto",
+      "360 Degree Surround Camera"
+    ],
+    "specifications": {
+      "drivetrain": "AWD",
+      "seatingCapacity": 6,
+      "luggageCapacity": "583 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "1581 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 104,
+    "name": "Infiniti Performante 50d",
+    "slug": "infiniti-performante-50d",
+    "brand": "Infiniti",
+    "price": 237568,
+    "year": 2026,
+    "category": "Sports Coupes",
+    "fuelType": "Plug-in Hybrid",
+    "transmission": "Dual-Clutch",
+    "horsepower": 1032,
+    "torque": 658,
+    "rangeKm": 626,
+    "topSpeed": 355,
+    "acceleration": 3.2,
+    "rating": 4.5,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "360 Degree Surround Camera",
+      "Dynamic Chassis Control",
+      "Voice-Activated Controls",
+      "Panoramic Glass Roof",
+      "Premium Surround Sound System",
+      "Heated and Ventilated Seats",
+      "Level 2 Self-Driving Capability"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "420 Liters",
+      "batteryCapacity": "N/A",
+      "weight": "2102 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  },
+  {
+    "id": 105,
+    "name": "Rolls-Royce Trek 30d",
+    "slug": "rolls-royce-trek-30d",
+    "brand": "Rolls-Royce",
+    "price": 106495,
+    "year": 2026,
+    "category": "SUV & Crossovers",
+    "fuelType": "Electric",
+    "transmission": "Single-Speed Direct",
+    "horsepower": 724,
+    "torque": 978,
+    "rangeKm": 745,
+    "topSpeed": 251,
+    "acceleration": 4.1,
+    "rating": 4.5,
+    "featured": false,
+    "images": [
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=80"
+    ],
+    "features": [
+      "Panoramic Glass Roof",
+      "Adaptive Cruise Control",
+      "Dynamic Chassis Control",
+      "Head-up HUD Display",
+      "Wireless Apple CarPlay & Android Auto"
+    ],
+    "specifications": {
+      "drivetrain": "FWD",
+      "seatingCapacity": 4,
+      "luggageCapacity": "300 Liters",
+      "batteryCapacity": "84 kWh",
+      "weight": "1597 kg",
+      "warranty": "5 Years / 100,000 km"
+    }
+  }
+]

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automotive News Hub - DriveX</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f5f7ff',
+              100: '#e9eeff',
+              200: '#cfd9ff',
+              300: '#a7b8ff',
+              400: '#7a8fff',
+              500: '#5669ff',
+              600: '#3947f5',
+              700: '#2f38d7',
+              800: '#2830ae',
+              900: '#252d89'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+<body class="text-white selection:bg-brand-500 selection:text-white min-h-screen flex flex-col">
+
+  <!-- HEADER -->
+  <div id="header-container"></div>
+
+  <!-- NEWS INDEX -->
+  <main class="flex-grow pt-24 pb-16">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <!-- TITLE & CONTROLS -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <p class="text-brand-500 font-semibold mb-1 uppercase tracking-wider text-xs">DriveX Newsroom</p>
+          <h1 class="text-4xl font-black text-white tracking-tight">Automotive News</h1>
+          <p class="text-zinc-500 text-sm mt-1">Real-time alerts, technology breakthroughs, and executive updates.</p>
+        </div>
+
+        <div class="relative w-full md:max-w-xs">
+          <input type="text" id="news-search" placeholder="Search news headlines..." 
+                 class="w-full bg-white/5 border border-white/10 rounded-xl pl-4 pr-10 py-3 text-sm text-white outline-none focus:border-brand-500 transition duration-300">
+          <span class="absolute right-3.5 top-3.5 text-zinc-500">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </span>
+        </div>
+      </div>
+
+      <!-- MAIN SECTION GRID -->
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- LEFT: FEED GRID (8 cols) -->
+        <div class="lg:col-span-8 space-y-10">
+          
+          <!-- Categories filter -->
+          <div class="flex border-b border-white/10 gap-6 overflow-x-auto text-xs font-bold pb-px" id="news-category-tabs">
+            <button class="news-tab pb-4 text-white border-b-2 border-brand-500 transition" data-category="">
+              All News
+            </button>
+            <button class="news-tab pb-4 text-zinc-500 hover:text-white transition" data-category="Electric Vehicles">
+              Electric Vehicles
+            </button>
+            <button class="news-tab pb-4 text-zinc-500 hover:text-white transition" data-category="New Reveals">
+              New Reveals
+            </button>
+            <button class="news-tab pb-4 text-zinc-500 hover:text-white transition" data-category="Technology">
+              Technology
+            </button>
+            <button class="news-tab pb-4 text-zinc-500 hover:text-white transition" data-category="Motorsports">
+              Motorsports
+            </button>
+            <button class="news-tab pb-4 text-zinc-500 hover:text-white transition" data-category="Corporate">
+              Corporate
+            </button>
+          </div>
+
+          <!-- News Feed -->
+          <div id="news-feed-grid" class="space-y-8">
+            <!-- Dynamic items -->
+          </div>
+
+          <!-- Pagination -->
+          <div id="news-pagination" class="flex justify-center items-center gap-2 pt-6">
+            <!-- Controls -->
+          </div>
+
+        </div>
+
+        <!-- RIGHT: TRENDING STORIES SIDEBAR (4 cols) -->
+        <aside class="lg:col-span-4 space-y-8 sticky top-28">
+          <div class="glass border border-white/10 rounded-3xl p-8 space-y-6">
+            <h3 class="font-black text-lg text-white border-b border-white/5 pb-3">Trending Stories</h3>
+            <div id="trending-news-list" class="space-y-5">
+              <!-- Dynamic items -->
+            </div>
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <div id="footer-container"></div>
+
+  <!-- SCRIPTS -->
+  <script type="module" src="/assets/js/common.js"></script>
+  <script type="module">
+    import { NewsService } from './services/news.service.js';
+
+    let categoryVal = '';
+    let searchVal = '';
+    let currentPage = 1;
+    const itemsPerPage = 6;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('news-search');
+      searchInput.addEventListener('input', () => {
+        searchVal = searchInput.value;
+        currentPage = 1;
+        fetchAndRenderNews();
+      });
+
+      document.querySelectorAll('.news-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+          document.querySelectorAll('.news-tab').forEach(t => {
+            t.classList.remove('text-white', 'border-b-2', 'border-brand-500');
+            t.classList.add('text-zinc-500');
+          });
+          tab.classList.add('text-white', 'border-b-2', 'border-brand-500');
+          tab.classList.remove('text-zinc-500');
+
+          categoryVal = tab.getAttribute('data-category');
+          currentPage = 1;
+          fetchAndRenderNews();
+        });
+      });
+
+      fetchAndRenderNews();
+      renderTrendingNews();
+    });
+
+    async function fetchAndRenderNews() {
+      const grid = document.getElementById('news-feed-grid');
+      const paginationDiv = document.getElementById('news-pagination');
+
+      grid.innerHTML = `
+        <div class="py-12 flex flex-col items-center justify-center">
+          <div class="loader-spinner mb-4"></div>
+          <p class="text-zinc-500 text-sm">Searching news databases...</p>
+        </div>
+      `;
+
+      try {
+        const { news, total, page, pages } = await NewsService.getNews(categoryVal, searchVal, currentPage, itemsPerPage);
+
+        if (news.length === 0) {
+          grid.innerHTML = `<p class="text-center text-zinc-500 py-12">No headlines found matching search criteria.</p>`;
+          paginationDiv.innerHTML = '';
+          return;
+        }
+
+        grid.innerHTML = news.map(item => `
+          <div class="glass border border-white/10 rounded-3xl overflow-hidden grid sm:grid-cols-3 gap-6 hover:scale-[1.005] transition duration-300">
+            <div class="h-48 sm:h-full overflow-hidden bg-zinc-950">
+              <img src="${item.image}" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition duration-500">
+            </div>
+            
+            <div class="sm:col-span-2 p-6 flex flex-col justify-center">
+              <div class="flex items-center gap-3 text-[10px] font-bold text-brand-400 uppercase tracking-widest mb-2">
+                <span>${item.category}</span>
+                <span>•</span>
+                <span class="text-zinc-500 font-medium">${item.publishedAt}</span>
+              </div>
+              
+              <h3 class="font-black text-white hover:text-brand-400 transition leading-snug text-lg mb-2">
+                ${item.title}
+              </h3>
+              
+              <p class="text-zinc-400 text-xs leading-relaxed line-clamp-2 mb-4">
+                ${item.excerpt}
+              </p>
+
+              <span class="text-[10px] text-zinc-500 mt-auto font-semibold">DriveX Bureau</span>
+            </div>
+          </div>
+        `).join('');
+
+        renderPagination(pages, page);
+      } catch (e) {
+        console.error('News loading failed:', e);
+        grid.innerHTML = '<p class="text-center text-rose-500">Failed to query news logs.</p>';
+      }
+    }
+
+    async function renderTrendingNews() {
+      const sidebar = document.getElementById('trending-news-list');
+      try {
+        const list = await NewsService.getTrendingNews(5);
+        if (list.length === 0) {
+          sidebar.innerHTML = '<p class="text-zinc-650 text-xs">No trending stories.</p>';
+          return;
+        }
+
+        sidebar.innerHTML = list.map(item => `
+          <div class="group flex gap-3.5 items-start">
+            <div class="w-2.5 h-2.5 rounded-full bg-brand-500 mt-1.5 flex-shrink-0"></div>
+            <div>
+              <h4 class="text-xs font-bold text-zinc-300 group-hover:text-brand-400 transition leading-snug">
+                ${item.title}
+              </h4>
+              <span class="text-[9px] text-zinc-600 block mt-1">${item.publishedAt} • ${item.category}</span>
+            </div>
+          </div>
+        `).join('');
+      } catch (e) {
+        console.error('Trending side load error:', e);
+      }
+    }
+
+    function renderPagination(totalPages, currentPageNum) {
+      const paginationDiv = document.getElementById('news-pagination');
+      if (totalPages <= 1) {
+        paginationDiv.innerHTML = '';
+        return;
+      }
+
+      let html = '';
+      html += `
+        <button class="px-4 py-2.5 rounded-xl border border-white/10 text-xs font-bold transition hover:bg-white/5 disabled:opacity-30 disabled:hover:bg-transparent" 
+                ${currentPageNum === 1 ? 'disabled' : ''} onclick="changePage(${currentPageNum - 1})">
+          Prev
+        </button>
+      `;
+
+      for (let i = 1; i <= totalPages; i++) {
+        if (i === 1 || i === totalPages || (i >= currentPageNum - 1 && i <= currentPageNum + 1)) {
+          html += `
+            <button class="w-10 h-10 rounded-xl border ${i === currentPageNum ? 'bg-brand-600 border-brand-500 text-white' : 'border-white/10 text-zinc-400 hover:bg-white/5'} text-xs font-bold transition" 
+                    onclick="changePage(${i})">
+              ${i}
+            </button>
+          `;
+        } else if (i === currentPageNum - 2 || i === currentPageNum + 2) {
+          html += `<span class="text-zinc-600 text-xs px-1">...</span>`;
+        }
+      }
+
+      html += `
+        <button class="px-4 py-2.5 rounded-xl border border-white/10 text-xs font-bold transition hover:bg-white/5 disabled:opacity-30 disabled:hover:bg-transparent" 
+                ${currentPageNum === totalPages ? 'disabled' : ''} onclick="changePage(${currentPageNum + 1})">
+          Next
+        </button>
+      `;
+
+      paginationDiv.innerHTML = html;
+    }
+
+    window.changePage = (pageNum) => {
+      currentPage = pageNum;
+      fetchAndRenderNews();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+</body>
+</html>

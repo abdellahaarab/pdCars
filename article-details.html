@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Reader - DriveX</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f5f7ff',
+              100: '#e9eeff',
+              200: '#cfd9ff',
+              300: '#a7b8ff',
+              400: '#7a8fff',
+              500: '#5669ff',
+              600: '#3947f5',
+              700: '#2f38d7',
+              800: '#2830ae',
+              900: '#252d89'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+<body class="text-white selection:bg-brand-500 selection:text-white min-h-screen flex flex-col">
+
+  <!-- HEADER -->
+  <div id="header-container"></div>
+
+  <!-- ARTICLE VIEW -->
+  <main class="flex-grow pt-24 pb-16">
+    <div id="content-container" class="max-w-4xl mx-auto px-6">
+      
+      <!-- Loading State -->
+      <div id="loading-state" class="py-24 flex flex-col items-center justify-center">
+        <div class="loader-spinner mb-4"></div>
+        <p class="text-zinc-500 text-sm">Retrieving article content...</p>
+      </div>
+
+      <!-- Error State -->
+      <div id="error-state" class="hidden py-16 text-center glass border border-white/5 rounded-3xl">
+        <svg class="w-12 h-12 text-zinc-600 mx-auto mb-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+        </svg>
+        <h3 class="font-bold text-white text-lg">Article Not Found</h3>
+        <p class="text-zinc-500 text-sm mt-2">The article you are trying to access has been archived or does not exist.</p>
+        <a href="articles.html" class="inline-block mt-6 px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-500 transition font-bold text-sm">
+          Return to Magazine
+        </a>
+      </div>
+
+      <!-- Main Article Frame -->
+      <article id="article-frame" class="hidden space-y-10 animate-fade-in">
+        
+        <!-- Category & Title -->
+        <div class="space-y-4 text-center md:text-left">
+          <span id="art-category" class="inline-block px-3 py-1 text-xs font-bold uppercase tracking-widest bg-brand-600/10 border border-brand-500/20 text-brand-400 rounded-full">
+            Category
+          </span>
+          <h1 id="art-title" class="text-3xl md:text-5xl font-black text-white leading-tight tracking-tight">
+            Article Title
+          </h1>
+          
+          <!-- Metadata -->
+          <div class="flex flex-wrap items-center justify-center md:justify-start gap-x-6 gap-y-2 pt-2 text-zinc-500 text-xs font-semibold">
+            <div class="flex items-center gap-2">
+              <span>By</span>
+              <span id="art-author" class="text-zinc-300 font-bold">Author Name</span>
+            </div>
+            <span>•</span>
+            <span id="art-date">Published Date</span>
+            <span>•</span>
+            <span id="art-read-time">X min read</span>
+          </div>
+        </div>
+
+        <!-- Cover Image -->
+        <div class="overflow-hidden rounded-3xl border border-white/10 aspect-[16/9] bg-zinc-950">
+          <img id="art-image" src="" class="w-full h-full object-cover" alt="Article Cover">
+        </div>
+
+        <!-- Content sections -->
+        <div id="art-content-sections" class="prose prose-invert max-w-none text-zinc-300 leading-relaxed text-base md:text-lg space-y-8 pt-4">
+          <!-- Populated dynamically -->
+        </div>
+
+        <!-- Bottom: Related articles inside card layout -->
+        <div class="pt-16 border-t border-white/10">
+          <h3 class="font-black text-2xl text-white tracking-tight mb-8">Related Reads</h3>
+          <div id="related-articles-grid" class="grid md:grid-cols-3 gap-8">
+            <!-- Dynamic items -->
+          </div>
+        </div>
+
+      </article>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <div id="footer-container"></div>
+
+  <!-- SCRIPTS -->
+  <script type="module" src="/assets/js/common.js"></script>
+  <script type="module">
+    import { ArticleService } from './services/articles.service.js';
+    import { getUrlParam } from './assets/js/utils.js';
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      const artId = getUrlParam('id');
+      if (!artId) {
+        showError();
+        return;
+      }
+
+      try {
+        const art = await ArticleService.getArticleById(artId);
+        if (!art) {
+          showError();
+          return;
+        }
+
+        // 1. POPULATE METADATA
+        document.getElementById('art-title').textContent = art.title;
+        document.getElementById('art-category').textContent = art.category;
+        document.getElementById('art-author').textContent = art.author;
+        document.getElementById('art-date').textContent = art.publishedAt;
+        document.getElementById('art-read-time').textContent = `${art.readTime} min read`;
+        document.getElementById('art-image').src = art.image;
+
+        // Title Tag Update
+        document.title = `${art.title} | DriveX Insights`;
+
+        // 2. PARSE CONTENT
+        const sectionsContainer = document.getElementById('art-content-sections');
+        let sections = [];
+        try {
+          sections = JSON.parse(art.content);
+        } catch(e) {
+          // Fallback if not stringified JSON array
+          sections = [{ heading: "Introduction", text: art.excerpt }];
+        }
+
+        sectionsContainer.innerHTML = sections.map(sec => `
+          <div class="space-y-4">
+            <h3 class="text-2xl font-black text-white tracking-tight">${sec.heading}</h3>
+            <p class="text-zinc-400 leading-relaxed">${sec.text}</p>
+          </div>
+        `).join('');
+
+        // 3. RELATED ARTICLES
+        const related = await ArticleService.getRelatedArticles(artId, 3);
+        const relatedGrid = document.getElementById('related-articles-grid');
+
+        if (related.length === 0) {
+          relatedGrid.innerHTML = '<p class="col-span-full text-zinc-500 text-center">No related articles found.</p>';
+        } else {
+          relatedGrid.innerHTML = related.map(item => `
+            <div class="glass border border-white/10 rounded-2xl overflow-hidden flex flex-col h-full group hover:scale-[1.01] transition duration-300">
+              <div class="overflow-hidden aspect-[16/10] bg-zinc-950">
+                <img src="${item.image}" class="w-full h-full object-cover opacity-70 hover:opacity-100 transition duration-500">
+              </div>
+              <div class="p-5 flex flex-col flex-grow">
+                <span class="text-[10px] text-brand-400 font-bold uppercase tracking-wider block mb-1">${item.category}</span>
+                <a href="article-details.html?id=${item.id}" class="font-bold text-white hover:text-brand-400 transition leading-snug line-clamp-2 mb-4">
+                  ${item.title}
+                </a>
+                <span class="text-[10px] text-zinc-500 mt-auto">${item.publishedAt}</span>
+              </div>
+            </div>
+          `).join('');
+        }
+
+        // SHOW
+        document.getElementById('loading-state').classList.add('hidden');
+        document.getElementById('article-frame').classList.remove('hidden');
+
+      } catch (e) {
+        console.error('Article load failed:', e);
+        showError();
+      }
+    });
+
+    function showError() {
+      document.getElementById('loading-state').classList.add('hidden');
+      document.getElementById('error-state').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>

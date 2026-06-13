@@ -1,0 +1,348 @@
+{
+  "site": {
+    "name": "DriveX",
+    "tagline": "Premium Cars • Reviews • News • Articles",
+    "description": "Discover luxury vehicles, electric innovations, performance reviews, industry news, and premium automotive articles from around the world.",
+    "logo": "DX",
+    "email": "contact@drivex.com",
+    "phone": "+1-555-123-4567",
+    "address": "Automotive Avenue, New York, USA",
+    "socials": {
+      "facebook": "https://facebook.com/drivex",
+      "instagram": "https://instagram.com/drivex",
+      "x": "https://x.com/drivex",
+      "youtube": "https://youtube.com/@drivex"
+    }
+  },
+
+  "hero": {
+    "badge": "Premium Automotive Magazine",
+    "title": "Discover The Future Of Cars",
+    "highlight": "Future",
+    "description": "Explore luxury vehicles, electric innovations, performance reviews, industry news, and premium automotive articles from around the world.",
+    "image": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7",
+    "buttons": {
+      "primary": "Browse Cars",
+      "secondary": "Latest Articles"
+    },
+    "stats": [
+      {
+        "title": "Readers",
+        "value": "25K+"
+      },
+      {
+        "title": "Articles",
+        "value": "1200+"
+      },
+      {
+        "title": "Cars Reviewed",
+        "value": "350+"
+      }
+    ]
+  },
+
+  "featuredCars": [
+    {
+      "id": 1,
+      "name": "Tesla Model S Plaid",
+      "slug": "tesla-model-s-plaid",
+      "brand": "Tesla",
+      "year": 2026,
+      "category": "Electric Sedan",
+      "price": 99990,
+      "currency": "USD",
+      "rangeKm": 637,
+      "horsepower": 1020,
+      "topSpeedKmh": 322,
+      "acceleration0to100": 2.1,
+      "drivetrain": "AWD",
+      "fuelType": "Electric",
+      "featured": true,
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e",
+      "gallery": [
+        "https://images.unsplash.com/photo-1555215695-3004980ad54e",
+        "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7"
+      ],
+      "description": "High-performance luxury electric sedan with cutting-edge technology."
+    },
+    {
+      "id": 2,
+      "name": "Porsche 911 Turbo S",
+      "slug": "porsche-911-turbo-s",
+      "brand": "Porsche",
+      "year": 2026,
+      "category": "Sports Coupe",
+      "price": 214000,
+      "currency": "USD",
+      "rangeKm": null,
+      "horsepower": 640,
+      "topSpeedKmh": 330,
+      "acceleration0to100": 2.7,
+      "drivetrain": "AWD",
+      "fuelType": "Gasoline",
+      "featured": true,
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
+      "gallery": [],
+      "description": "Iconic sports car combining luxury and performance."
+    },
+    {
+      "id": 3,
+      "name": "BMW iX M70",
+      "slug": "bmw-ix-m70",
+      "brand": "BMW",
+      "year": 2026,
+      "category": "Electric SUV",
+      "price": 112000,
+      "currency": "USD",
+      "rangeKm": 700,
+      "horsepower": 650,
+      "topSpeedKmh": 250,
+      "acceleration0to100": 3.8,
+      "drivetrain": "AWD",
+      "fuelType": "Electric",
+      "featured": true,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1544636331-e26879cd4d9b",
+      "gallery": [],
+      "description": "Luxury electric SUV offering exceptional range and comfort."
+    },
+    {
+      "id": 4,
+      "name": "Ferrari SF90 Stradale",
+      "slug": "ferrari-sf90-stradale",
+      "brand": "Ferrari",
+      "year": 2026,
+      "category": "Supercar",
+      "price": 625000,
+      "currency": "USD",
+      "rangeKm": 25,
+      "horsepower": 1000,
+      "topSpeedKmh": 340,
+      "acceleration0to100": 2.5,
+      "drivetrain": "AWD",
+      "fuelType": "Hybrid",
+      "featured": true,
+      "rating": 5.0,
+      "image": "https://images.unsplash.com/photo-1511919884226-fd3cad34687c",
+      "gallery": [],
+      "description": "Hybrid supercar delivering extraordinary performance."
+    }
+  ],
+
+  "brands": [
+    {
+      "id": 1,
+      "name": "Tesla",
+      "logo": "/images/brands/tesla.png",
+      "country": "USA",
+      "founded": 2003
+    },
+    {
+      "id": 2,
+      "name": "BMW",
+      "logo": "/images/brands/bmw.png",
+      "country": "Germany",
+      "founded": 1916
+    },
+    {
+      "id": 3,
+      "name": "Mercedes-Benz",
+      "logo": "/images/brands/mercedes.png",
+      "country": "Germany",
+      "founded": 1926
+    },
+    {
+      "id": 4,
+      "name": "Audi",
+      "logo": "/images/brands/audi.png",
+      "country": "Germany",
+      "founded": 1909
+    },
+    {
+      "id": 5,
+      "name": "Ferrari",
+      "logo": "/images/brands/ferrari.png",
+      "country": "Italy",
+      "founded": 1939
+    }
+  ],
+
+  "categories": [
+    {
+      "id": 1,
+      "name": "Electric Vehicles",
+      "slug": "electric-vehicles"
+    },
+    {
+      "id": 2,
+      "name": "Luxury Cars",
+      "slug": "luxury-cars"
+    },
+    {
+      "id": 3,
+      "name": "SUV",
+      "slug": "suv"
+    },
+    {
+      "id": 4,
+      "name": "Sports Cars",
+      "slug": "sports-cars"
+    },
+    {
+      "id": 5,
+      "name": "Supercars",
+      "slug": "supercars"
+    }
+  ],
+
+  "articles": [
+    {
+      "id": 1,
+      "title": "The Future Of EV Technology In 2026",
+      "slug": "future-of-ev-technology-2026",
+      "excerpt": "Discover how battery innovation is changing the automotive industry.",
+      "content": "",
+      "featuredImage": "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d",
+      "author": "Michael Carter",
+      "category": "Electric Vehicles",
+      "tags": [
+        "EV",
+        "Battery",
+        "Tesla",
+        "Technology"
+      ],
+      "publishedAt": "2026-01-15",
+      "readTime": 8,
+      "views": 15420,
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Top Luxury Sedans Worth Buying",
+      "slug": "top-luxury-sedans-worth-buying",
+      "excerpt": "A complete guide to premium comfort and performance.",
+      "content": "",
+      "featuredImage": "https://images.unsplash.com/photo-1494905998402-395d579af36f",
+      "author": "Sarah Wilson",
+      "category": "Luxury Cars",
+      "tags": [
+        "Luxury",
+        "BMW",
+        "Mercedes"
+      ],
+      "publishedAt": "2026-02-10",
+      "readTime": 6,
+      "views": 12340,
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Inside Modern Supercar Engineering",
+      "slug": "inside-modern-supercar-engineering",
+      "excerpt": "Explore the technologies powering today's fastest machines.",
+      "content": "",
+      "featuredImage": "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d",
+      "author": "David Ross",
+      "category": "Performance",
+      "tags": [
+        "Ferrari",
+        "Lamborghini",
+        "Engineering"
+      ],
+      "publishedAt": "2026-03-05",
+      "readTime": 10,
+      "views": 18650,
+      "featured": true
+    }
+  ],
+
+  "reviews": [
+    {
+      "id": 1,
+      "carId": 1,
+      "title": "Tesla Model S Plaid Review",
+      "rating": 4.9,
+      "pros": [
+        "Fast acceleration",
+        "Long range",
+        "Advanced software"
+      ],
+      "cons": [
+        "Expensive",
+        "Minimal interior"
+      ],
+      "author": "James Walker",
+      "publishedAt": "2026-01-20"
+    }
+  ],
+
+  "news": [
+    {
+      "id": 1,
+      "title": "Major Breakthrough In Solid-State Batteries",
+      "slug": "solid-state-battery-breakthrough",
+      "image": "/images/news/battery.jpg",
+      "publishedAt": "2026-04-05"
+    },
+    {
+      "id": 2,
+      "title": "New Ferrari Hybrid Supercar Revealed",
+      "slug": "new-ferrari-hybrid-supercar",
+      "image": "/images/news/ferrari.jpg",
+      "publishedAt": "2026-04-18"
+    }
+  ],
+
+  "newsletter": {
+    "title": "Stay Ahead Of The Automotive World",
+    "description": "Get premium car reviews, automotive news, buying guides, and industry updates directly in your inbox.",
+    "placeholder": "Enter your email",
+    "buttonText": "Subscribe"
+  },
+
+  "navigation": [
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Cars",
+      "url": "/cars"
+    },
+    {
+      "name": "Brands",
+      "url": "/brands"
+    },
+    {
+      "name": "Articles",
+      "url": "/articles"
+    },
+    {
+      "name": "Reviews",
+      "url": "/reviews"
+    },
+    {
+      "name": "News",
+      "url": "/news"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ],
+
+  "seo": {
+    "title": "DriveX - Premium Cars & Automotive Articles",
+    "description": "Luxury cars, electric vehicles, supercars, automotive reviews, industry news, and expert buying guides.",
+    "keywords": [
+      "cars",
+      "luxury cars",
+      "electric vehicles",
+      "supercars",
+      "automotive news",
+      "car reviews"
+    ]
+  }
+}

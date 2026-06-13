@@ -1,0 +1,283 @@
+/* Custom CSS overrides for DriveX premium dark luxury look */
+
+/* Webkit Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  border: 2px solid #09090b;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5669ff;
+}
+
+/* Base resets & behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #09090b;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism card overlay & effects */
+.glass {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 40px 0 rgba(86, 105, 255, 0.1);
+}
+
+.glass-intense {
+  background: rgba(9, 9, 11, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Premium gradients */
+.hero-gradient {
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(86, 105, 255, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.04) 0%, transparent 45%),
+    #09090b;
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 25px 0 rgba(86, 105, 255, 0.45);
+}
+
+/* Keyframes & transitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Loading indicators */
+.loader-spinner {
+  border: 3px solid rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  border-top: 3px solid #5669ff;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Range input styled custom */
+input[type="range"]::-webkit-slider-thumb {
+  background: #5669ff;
+  border: 2px solid #ffffff;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-thumb {
+  background: #5669ff;
+  border: 2px solid #ffffff;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+/* Hover effects */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+.hover-scale:hover {
+  transform: translateY(-4px) scale(1.01);
+}
+
+/* Comparison Sticky Drawer */
+.compare-drawer {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* LIGHT MODE STYLES & ALGORITHM OVERRIDES */
+
+/* Apply base light styles */
+html.light body {
+  background-color: #f4f4f5 !important;
+  color: #18181b !important;
+}
+
+/* Scrollbars overrides in light mode */
+html.light ::-webkit-scrollbar-track {
+  background: #f4f4f5;
+}
+html.light ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-color: #f4f4f5;
+}
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #5669ff;
+}
+
+/* Custom background overrides */
+html.light .bg-zinc-950,
+html.light .bg-zinc-900,
+html.light .bg-zinc-900\/40,
+html.light .bg-zinc-950\/95,
+html.light .bg-zinc-950\/5,
+html.light .bg-black\/60 {
+  background-color: #ffffff !important;
+}
+
+html.light .bg-zinc-900\/40 {
+  background-color: #f4f4f5 !important;
+}
+
+html.light .bg-zinc-950 {
+  background-color: #fafafa !important;
+}
+
+html.light .bg-white\/5 {
+  background-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+html.light .bg-white\/10 {
+  background-color: rgba(0, 0, 0, 0.06) !important;
+}
+
+html.light .bg-white\/\[0\.02\] {
+  background-color: #f4f4f5 !important;
+}
+
+/* Custom text overrides */
+html.light .text-white {
+  color: #18181b !important;
+}
+
+html.light .text-zinc-300 {
+  color: #27272a !important;
+}
+
+html.light .text-zinc-400 {
+  color: #52525b !important;
+}
+
+html.light .text-zinc-500 {
+  color: #71717a !important;
+}
+
+/* Custom border overrides */
+html.light .border-white\/10,
+html.light .border-white\/5,
+html.light .border-white\/15,
+html.light .border-t,
+html.light .border-b,
+html.light .border-y {
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Header & Footer overrides */
+html.light header {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+html.light footer {
+  background-color: #e4e4e7 !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+  color: #52525b !important;
+}
+
+html.light footer .text-white {
+  color: #18181b !important;
+}
+
+/* Glassmorphism custom light mode */
+html.light .glass {
+  background: rgba(255, 255, 255, 0.7) !important;
+  border-color: rgba(0, 0, 0, 0.06) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.04) !important;
+}
+
+html.light .glass:hover {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 12px 40px 0 rgba(86, 105, 255, 0.06) !important;
+}
+
+html.light .glass-intense {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 -8px 32px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Hero Section adjustments */
+html.light .hero-gradient {
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(86, 105, 255, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(0, 0, 0, 0.01) 0%, transparent 45%),
+    #fafafa;
+}
+
+/* Spec tables and tabs */
+html.light table tr.bg-white\/\[0\.01\] {
+  background-color: rgba(0, 0, 0, 0.02) !important;
+}
+html.light td.bg-white\/\[0\.01\],
+html.light td.bg-white\/\[0\.005\] {
+  background-color: rgba(0, 0, 0, 0.01) !important;
+}
+
+/* Inputs and interactive elements */
+html.light select,
+html.light input[type="text"],
+html.light input[type="email"] {
+  background-color: #ffffff !important;
+  color: #18181b !important;
+  border-color: rgba(0, 0, 0, 0.12) !important;
+}
+html.light select:focus,
+html.light input[type="text"]:focus,
+html.light input[type="email"]:focus {
+  border-color: #5669ff !important;
+}
+
+html.light .loader-spinner {
+  border-color: rgba(0, 0, 0, 0.05);
+  border-top-color: #5669ff;
+}
+
+/* Brand logo backdrop helper in light mode */
+html.light .bg-brand-600\/10 {
+  background-color: rgba(86, 105, 255, 0.08) !important;
+}
+
+/* Navigation button colors */
+html.light .bg-brand-600 {
+  background-color: #5669ff !important;
+}
+html.light .bg-brand-600:hover {
+  background-color: #3947f5 !important;
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand Profiles - DriveX</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f5f7ff',
+              100: '#e9eeff',
+              200: '#cfd9ff',
+              300: '#a7b8ff',
+              400: '#7a8fff',
+              500: '#5669ff',
+              600: '#3947f5',
+              700: '#2f38d7',
+              800: '#2830ae',
+              900: '#252d89'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+<body class="text-white selection:bg-brand-500 selection:text-white min-h-screen flex flex-col">
+
+  <!-- HEADER -->
+  <div id="header-container"></div>
+
+  <!-- BRAND PROFILE -->
+  <main class="flex-grow pt-24 pb-16">
+    <div id="content-container" class="max-w-7xl mx-auto px-6">
+      
+      <!-- Loading State -->
+      <div id="loading-state" class="py-24 flex flex-col items-center justify-center">
+        <div class="loader-spinner mb-4"></div>
+        <p class="text-zinc-500 text-sm">Retrieving manufacturer history...</p>
+      </div>
+
+      <!-- Error State -->
+      <div id="error-state" class="hidden py-16 text-center glass border border-white/5 rounded-3xl max-w-md mx-auto">
+        <svg class="w-12 h-12 text-zinc-600 mx-auto mb-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+        </svg>
+        <h3 class="font-bold text-white text-lg">Brand Profile Not Found</h3>
+        <p class="text-zinc-500 text-sm mt-2">The requested brand does not exist in our historical archive.</p>
+        <a href="brands.html" class="inline-block mt-6 px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-500 transition font-bold text-sm">
+          Return to Brands
+        </a>
+      </div>
+
+      <!-- Main Profile -->
+      <div id="profile-content" class="hidden space-y-16 animate-fade-in">
+        
+        <!-- Brand Intro Header -->
+        <div class="grid md:grid-cols-12 gap-8 items-center bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 glass">
+          
+          <div class="md:col-span-3 flex justify-center">
+            <!-- Large Logo icon -->
+            <div class="w-28 h-28 rounded-3xl bg-brand-600/10 border border-brand-500/30 text-brand-500 font-black text-4xl flex items-center justify-center shadow-lg shadow-brand-500/5">
+              <span id="brand-logo-txt">B</span>
+            </div>
+          </div>
+
+          <div class="md:col-span-9 space-y-4 text-center md:text-left">
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-3 text-xs text-zinc-500 font-bold uppercase tracking-wider">
+              <span>Manufacturer Profile</span>
+              <span>•</span>
+              <span id="brand-country" class="text-brand-400">Germany</span>
+              <span>•</span>
+              <span>Founded <span id="brand-founded" class="text-zinc-300">1916</span></span>
+            </div>
+            
+            <h1 id="brand-title" class="text-4xl md:text-5xl font-black text-white tracking-tight">BMW</h1>
+            <p id="brand-description" class="text-zinc-400 text-sm leading-relaxed max-w-3xl">
+              Description details...
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Inventory list produced by brand -->
+        <div class="space-y-8">
+          <div>
+            <h3 class="font-black text-2xl text-white tracking-tight">Vehicles from this Manufacturer</h3>
+            <p class="text-zinc-500 text-sm mt-1">Browse luxury and performance catalogs configured in DriveX.</p>
+          </div>
+
+          <!-- Cars grid -->
+          <div id="brand-cars-grid" class="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
+            <!-- Dynamic items -->
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <div id="footer-container"></div>
+
+  <!-- SCRIPTS -->
+  <script type="module" src="/assets/js/common.js"></script>
+  <script type="module">
+    import { BrandService } from './services/brands.service.js';
+    import { CarService } from './services/cars.service.js';
+    import { FavoriteService } from './services/favorites.service.js';
+    import { CompareService } from './services/compare.service.js';
+    import { getUrlParam, formatPrice, getRatingStars } from './assets/js/utils.js';
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      const brandSlug = getUrlParam('id');
+      if (!brandSlug) {
+        showError();
+        return;
+      }
+
+      try {
+        const brand = await BrandService.getBrandBySlug(brandSlug);
+        if (!brand) {
+          showError();
+          return;
+        }
+
+        // 1. POPULATE BRAND INFO
+        document.getElementById('brand-title').textContent = brand.name;
+        document.getElementById('brand-country').textContent = brand.country;
+        document.getElementById('brand-founded').textContent = brand.founded;
+        document.getElementById('brand-description').textContent = brand.description;
+        document.getElementById('brand-logo-txt').textContent = brand.name.substring(0, 2).toUpperCase();
+
+        document.title = `${brand.name} | Manufacturer Profile | DriveX`;
+
+        // 2. QUERY MATCHING VEHICLES
+        const allCars = await CarService.getAllCars();
+        const brandCars = allCars.filter(car => car.brand.toLowerCase() === brand.name.toLowerCase());
+
+        const grid = document.getElementById('brand-cars-grid');
+        if (brandCars.length === 0) {
+          grid.innerHTML = `<p class="col-span-full text-center text-zinc-500 py-6">No vehicles cataloged for this brand in inventory.</p>`;
+        } else {
+          grid.innerHTML = brandCars.map(car => {
+            const isFav = FavoriteService.isFavorite(car.id);
+            const inComp = CompareService.isInCompare(car.id);
+            return `
+              <div class="glass border border-white/10 rounded-2xl overflow-hidden group hover:scale-[1.02] transition duration-300 flex flex-col relative h-full">
+                <div class="relative overflow-hidden aspect-[16/10] bg-zinc-950">
+                  <img src="${car.images[0]}" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition duration-500">
+                  
+                  <div class="absolute top-3 right-3 flex gap-1.5">
+                    <button class="fav-toggle w-8 h-8 rounded-full glass flex items-center justify-center text-zinc-300 hover:text-white transition" 
+                            data-id="${car.id}" title="${isFav ? 'Remove from favorites' : 'Add to favorites'}">
+                      <svg class="w-3.5 h-3.5 ${isFav ? 'fill-rose-500 text-rose-500' : 'stroke-current'}" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                      </svg>
+                    </button>
+                    <button class="compare-toggle w-8 h-8 rounded-full glass flex items-center justify-center text-zinc-300 hover:text-white transition" 
+                            data-id="${car.id}" title="${inComp ? 'Remove from comparison' : 'Add to comparison'}">
+                      <svg class="w-3.5 h-3.5 ${inComp ? 'text-brand-400 fill-brand-500/20' : 'stroke-current'}" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="p-5 flex flex-col flex-grow">
+                  <span class="text-[10px] text-zinc-500 font-bold uppercase tracking-wider block mb-1">${car.category}</span>
+                  <a href="car-details.html?id=${car.id}" class="font-black text-lg text-white hover:text-brand-400 transition leading-snug line-clamp-1 mb-2">
+                    ${car.name}
+                  </a>
+
+                  <div class="flex justify-between items-center mt-auto pt-3 border-t border-white/5">
+                    <span class="text-xs font-black text-brand-400">${formatPrice(car.price)}</span>
+                    <span class="text-[10px] text-zinc-400">${car.horsepower} HP • ${car.fuelType}</span>
+                  </div>
+                </div>
+              </div>
+            `;
+          }).join('');
+
+          // Bind card controls
+          grid.querySelectorAll('.fav-toggle').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+              e.preventDefault();
+              const id = btn.getAttribute('data-id');
+              const active = FavoriteService.toggleFavorite(id);
+              const icon = btn.querySelector('svg');
+              if (active) {
+                icon.classList.add('fill-rose-500', 'text-rose-500');
+              } else {
+                icon.classList.remove('fill-rose-500', 'text-rose-500');
+              }
+            });
+          });
+
+          grid.querySelectorAll('.compare-toggle').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+              e.preventDefault();
+              const id = btn.getAttribute('data-id');
+              const { inCompare, message } = CompareService.toggleCompare(id);
+              if (message) {
+                alert(message);
+              }
+              const icon = btn.querySelector('svg');
+              if (inCompare) {
+                icon.classList.add('text-brand-400', 'fill-brand-500/20');
+              } else {
+                icon.classList.remove('text-brand-400', 'fill-brand-500/20');
+              }
+            });
+          });
+        }
+
+        // SHOW
+        document.getElementById('loading-state').classList.add('hidden');
+        document.getElementById('profile-content').classList.remove('hidden');
+
+      } catch (e) {
+        console.error('Brand profile load failed:', e);
+        showError();
+      }
+    });
+
+    function showError() {
+      document.getElementById('loading-state').classList.add('hidden');
+      document.getElementById('error-state').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>

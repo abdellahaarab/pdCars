@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "name": "Tesla",
+    "slug": "tesla",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "USA",
+    "founded": 2003,
+    "description": "Tesla is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 2
+  },
+  {
+    "id": 2,
+    "name": "BMW",
+    "slug": "bmw",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Germany",
+    "founded": 1916,
+    "description": "BMW is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 1
+  },
+  {
+    "id": 3,
+    "name": "Mercedes-Benz",
+    "slug": "mercedes-benz",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Germany",
+    "founded": 1926,
+    "description": "Mercedes-Benz is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 1
+  },
+  {
+    "id": 4,
+    "name": "Audi",
+    "slug": "audi",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Germany",
+    "founded": 1909,
+    "description": "Audi is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 1
+  },
+  {
+    "id": 5,
+    "name": "Ferrari",
+    "slug": "ferrari",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Italy",
+    "founded": 1939,
+    "description": "Ferrari is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 3
+  },
+  {
+    "id": 6,
+    "name": "Lamborghini",
+    "slug": "lamborghini",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Italy",
+    "founded": 1963,
+    "description": "Lamborghini is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 0
+  },
+  {
+    "id": 7,
+    "name": "Porsche",
+    "slug": "porsche",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Germany",
+    "founded": 1931,
+    "description": "Porsche is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 2
+  },
+  {
+    "id": 8,
+    "name": "Aston Martin",
+    "slug": "aston-martin",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "UK",
+    "founded": 1913,
+    "description": "Aston Martin is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 3
+  },
+  {
+    "id": 9,
+    "name": "Bugatti",
+    "slug": "bugatti",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "France",
+    "founded": 1909,
+    "description": "Bugatti is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 1
+  },
+  {
+    "id": 10,
+    "name": "Bentley",
+    "slug": "bentley",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "UK",
+    "founded": 1919,
+    "description": "Bentley is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 0
+  },
+  {
+    "id": 11,
+    "name": "Rolls-Royce",
+    "slug": "rolls-royce",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "UK",
+    "founded": 1906,
+    "description": "Rolls-Royce is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 3
+  },
+  {
+    "id": 12,
+    "name": "Jaguar",
+    "slug": "jaguar",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "UK",
+    "founded": 1922,
+    "description": "Jaguar is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 1
+  },
+  {
+    "id": 13,
+    "name": "Land Rover",
+    "slug": "land-rover",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "UK",
+    "founded": 1948,
+    "description": "Land Rover is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 2
+  },
+  {
+    "id": 14,
+    "name": "Maserati",
+    "slug": "maserati",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Italy",
+    "founded": 1914,
+    "description": "Maserati is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 0
+  },
+  {
+    "id": 15,
+    "name": "Alfa Romeo",
+    "slug": "alfa-romeo",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Italy",
+    "founded": 1910,
+    "description": "Alfa Romeo is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 2
+  },
+  {
+    "id": 16,
+    "name": "Lexus",
+    "slug": "lexus",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Japan",
+    "founded": 1989,
+    "description": "Lexus is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 4
+  },
+  {
+    "id": 17,
+    "name": "Acura",
+    "slug": "acura",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "USA",
+    "founded": 1986,
+    "description": "Acura is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 3
+  },
+  {
+    "id": 18,
+    "name": "Infiniti",
+    "slug": "infiniti",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Japan",
+    "founded": 1989,
+    "description": "Infiniti is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 4
+  },
+  {
+    "id": 19,
+    "name": "Cadillac",
+    "slug": "cadillac",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "USA",
+    "founded": 1902,
+    "description": "Cadillac is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 2
+  },
+  {
+    "id": 20,
+    "name": "Lincoln",
+    "slug": "lincoln",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "USA",
+    "founded": 1917,
+    "description": "Lincoln is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 4
+  },
+  {
+    "id": 21,
+    "name": "Volvo",
+    "slug": "volvo",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Sweden",
+    "founded": 1927,
+    "description": "Volvo is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 2
+  },
+  {
+    "id": 22,
+    "name": "Polestar",
+    "slug": "polestar",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Sweden",
+    "founded": 1996,
+    "description": "Polestar is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 5
+  },
+  {
+    "id": 23,
+    "name": "Rivian",
+    "slug": "rivian",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "USA",
+    "founded": 2009,
+    "description": "Rivian is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 1
+  },
+  {
+    "id": 24,
+    "name": "Lucid",
+    "slug": "lucid",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "USA",
+    "founded": 2007,
+    "description": "Lucid is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 4
+  },
+  {
+    "id": 25,
+    "name": "Genesis",
+    "slug": "genesis",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "South Korea",
+    "founded": 2015,
+    "description": "Genesis is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 3
+  },
+  {
+    "id": 26,
+    "name": "Corvette",
+    "slug": "corvette",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "USA",
+    "founded": 1953,
+    "description": "Corvette is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 4
+  },
+  {
+    "id": 27,
+    "name": "McLaren",
+    "slug": "mclaren",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "UK",
+    "founded": 1963,
+    "description": "McLaren is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 3
+  },
+  {
+    "id": 28,
+    "name": "Pagani",
+    "slug": "pagani",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Italy",
+    "founded": 1992,
+    "description": "Pagani is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 2
+  },
+  {
+    "id": 29,
+    "name": "Koenigsegg",
+    "slug": "koenigsegg",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Sweden",
+    "founded": 1994,
+    "description": "Koenigsegg is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 1
+  },
+  {
+    "id": 30,
+    "name": "Lotus",
+    "slug": "lotus",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "UK",
+    "founded": 1948,
+    "description": "Lotus is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 4
+  },
+  {
+    "id": 31,
+    "name": "Ford",
+    "slug": "ford",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "USA",
+    "founded": 1903,
+    "description": "Ford is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 3
+  },
+  {
+    "id": 32,
+    "name": "Chevrolet",
+    "slug": "chevrolet",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "USA",
+    "founded": 1911,
+    "description": "Chevrolet is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 2
+  },
+  {
+    "id": 33,
+    "name": "Dodge",
+    "slug": "dodge",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "USA",
+    "founded": 1900,
+    "description": "Dodge is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 2
+  },
+  {
+    "id": 34,
+    "name": "Jeep",
+    "slug": "jeep",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "USA",
+    "founded": 1941,
+    "description": "Jeep is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 2
+  },
+  {
+    "id": 35,
+    "name": "GMC",
+    "slug": "gmc",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "USA",
+    "founded": 1911,
+    "description": "GMC is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 3
+  },
+  {
+    "id": 36,
+    "name": "Toyota",
+    "slug": "toyota",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Japan",
+    "founded": 1937,
+    "description": "Toyota is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 2
+  },
+  {
+    "id": 37,
+    "name": "Honda",
+    "slug": "honda",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Japan",
+    "founded": 1948,
+    "description": "Honda is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 3
+  },
+  {
+    "id": 38,
+    "name": "Nissan",
+    "slug": "nissan",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Japan",
+    "founded": 1933,
+    "description": "Nissan is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 4
+  },
+  {
+    "id": 39,
+    "name": "Mazda",
+    "slug": "mazda",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Japan",
+    "founded": 1920,
+    "description": "Mazda is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 0
+  },
+  {
+    "id": 40,
+    "name": "Subaru",
+    "slug": "subaru",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Japan",
+    "founded": 1953,
+    "description": "Subaru is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 3
+  },
+  {
+    "id": 41,
+    "name": "Mitsubishi",
+    "slug": "mitsubishi",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Japan",
+    "founded": 1870,
+    "description": "Mitsubishi is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 1
+  },
+  {
+    "id": 42,
+    "name": "Hyundai",
+    "slug": "hyundai",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "South Korea",
+    "founded": 1967,
+    "description": "Hyundai is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 3
+  },
+  {
+    "id": 43,
+    "name": "Kia",
+    "slug": "kia",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "South Korea",
+    "founded": 1944,
+    "description": "Kia is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 0
+  },
+  {
+    "id": 44,
+    "name": "Peugeot",
+    "slug": "peugeot",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "France",
+    "founded": 1810,
+    "description": "Peugeot is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 0
+  },
+  {
+    "id": 45,
+    "name": "Renault",
+    "slug": "renault",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "France",
+    "founded": 1899,
+    "description": "Renault is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 1
+  },
+  {
+    "id": 46,
+    "name": "Citroen",
+    "slug": "citroen",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "France",
+    "founded": 1919,
+    "description": "Citroen is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 3
+  },
+  {
+    "id": 47,
+    "name": "Fiat",
+    "slug": "fiat",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Italy",
+    "founded": 1899,
+    "description": "Fiat is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 2
+  },
+  {
+    "id": 48,
+    "name": "Volkswagen",
+    "slug": "volkswagen",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Germany",
+    "founded": 1937,
+    "description": "Volkswagen is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 0
+  },
+  {
+    "id": 49,
+    "name": "Rimac",
+    "slug": "rimac",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Croatia",
+    "founded": 2009,
+    "description": "Rimac is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 2
+  },
+  {
+    "id": 50,
+    "name": "Cupra",
+    "slug": "cupra",
+    "logo": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Spain",
+    "founded": 2018,
+    "description": "Cupra is an elite automotive manufacturer renowned globally for building premium class vehicles representing engineering excellence, luxury, and superior performance.",
+    "vehicleCount": 1
+  }
+]

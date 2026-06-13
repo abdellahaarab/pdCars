@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Electric Vehicles",
+    "slug": "electric-vehicles"
+  },
+  {
+    "id": 2,
+    "name": "Luxury Sedans",
+    "slug": "luxury-sedans"
+  },
+  {
+    "id": 3,
+    "name": "SUV & Crossovers",
+    "slug": "suv-crossovers"
+  },
+  {
+    "id": 4,
+    "name": "Supercars & Hypercars",
+    "slug": "supercars-hypercars"
+  },
+  {
+    "id": 5,
+    "name": "Sports Coupes",
+    "slug": "sports-coupes"
+  },
+  {
+    "id": 6,
+    "name": "Off-Road & Adventure",
+    "slug": "off-road-adventure"
+  },
+  {
+    "id": 7,
+    "name": "Hybrids",
+    "slug": "hybrids"
+  }
+]

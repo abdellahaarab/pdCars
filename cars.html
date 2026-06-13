@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Premium Vehicles - DriveX</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f5f7ff',
+              100: '#e9eeff',
+              200: '#cfd9ff',
+              300: '#a7b8ff',
+              400: '#7a8fff',
+              500: '#5669ff',
+              600: '#3947f5',
+              700: '#2f38d7',
+              800: '#2830ae',
+              900: '#252d89'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+<body class="text-white selection:bg-brand-500 selection:text-white min-h-screen flex flex-col">
+
+  <!-- HEADER -->
+  <div id="header-container"></div>
+
+  <!-- MAIN CATALOG -->
+  <main class="flex-grow pt-24 pb-16">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <!-- TITLE & CONTROLS HEADER -->
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
+        <div>
+          <p class="text-brand-500 font-semibold mb-1 uppercase tracking-wider text-xs">Platform Catalog</p>
+          <h1 class="text-4xl font-black text-white tracking-tight">Luxury Vehicles</h1>
+          <p class="text-zinc-500 text-sm mt-1">Discover, filter, and compare high performance cars.</p>
+        </div>
+        
+        <!-- Mobile Filters Button -->
+        <button id="toggle-mobile-filters" class="md:hidden flex items-center justify-center gap-2 w-full py-3.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition font-bold text-sm">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+          </svg>
+          Filter & Sort Vehicles
+        </button>
+      </div>
+
+      <!-- GRID LAYOUT (FILTER SIDEBAR + MAIN CATALOG GRID) -->
+      <div class="grid lg:grid-cols-4 gap-10 items-start">
+        
+        <!-- SIDEBAR FILTERS (DESKTOP) -->
+        <aside id="filter-sidebar" class="hidden md:block glass border border-white/10 rounded-3xl p-8 sticky top-28 space-y-8 max-h-[85vh] overflow-y-auto">
+          <div class="flex justify-between items-center pb-4 border-b border-white/10">
+            <h3 class="font-black text-lg text-white">Search Filters</h3>
+            <button id="reset-filters" class="text-xs text-zinc-500 hover:text-brand-400 font-bold transition">Clear All</button>
+          </div>
+
+          <!-- Search Inputs -->
+          <div class="space-y-2">
+            <label class="text-xs text-zinc-400 font-bold uppercase tracking-wider">Keywords</label>
+            <div class="relative">
+              <input type="text" id="filter-search" placeholder="Model, brand or type..." 
+                     class="w-full bg-white/5 border border-white/10 rounded-xl pl-4 pr-10 py-3 text-sm text-white outline-none focus:border-brand-500 transition duration-300">
+              <span class="absolute right-3.5 top-3.5 text-zinc-500">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <!-- Brand -->
+          <div class="space-y-2">
+            <label class="text-xs text-zinc-400 font-bold uppercase tracking-wider">Manufacturer</label>
+            <select id="filter-brand" class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white outline-none focus:border-brand-500 transition duration-300">
+              <option value="">All Brands</option>
+              <!-- Populated dynamically -->
+            </select>
+          </div>
+
+          <!-- Category -->
+          <div class="space-y-2">
+            <label class="text-xs text-zinc-400 font-bold uppercase tracking-wider">Category</label>
+            <select id="filter-category" class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white outline-none focus:border-brand-500 transition duration-300">
+              <option value="">All Categories</option>
+              <!-- Populated dynamically -->
+            </select>
+          </div>
+
+          <!-- Price Range Slider -->
+          <div class="space-y-4">
+            <div class="flex justify-between items-center">
+              <label class="text-xs text-zinc-400 font-bold uppercase tracking-wider">Max Price</label>
+              <span id="price-slider-value" class="text-sm font-bold text-brand-400">$350,000</span>
+            </div>
+            <input type="range" id="filter-price" min="40000" max="350000" step="5000" value="350000"
+                   class="w-full h-1 bg-white/10 rounded-lg appearance-none cursor-pointer accent-brand-500">
+            <div class="flex justify-between text-[10px] text-zinc-500 font-medium">
+              <span>$40,000</span>
+              <span>$350,000</span>
+            </div>
+          </div>
+
+          <!-- Fuel Type -->
+          <div class="space-y-2">
+            <label class="text-xs text-zinc-400 font-bold uppercase tracking-wider">Engine Power Type</label>
+            <select id="filter-fuel" class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white outline-none focus:border-brand-500 transition duration-300">
+              <option value="">Any Fuel System</option>
+              <option value="Electric">Electric</option>
+              <option value="Gasoline">Gasoline</option>
+              <option value="Hybrid">Hybrid</option>
+              <option value="Plug-in Hybrid">Plug-in Hybrid</option>
+              <option value="Diesel">Diesel</option>
+            </select>
+          </div>
+
+          <!-- Transmission -->
+          <div class="space-y-2">
+            <label class="text-xs text-zinc-400 font-bold uppercase tracking-wider">Transmission</label>
+            <select id="filter-transmission" class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white outline-none focus:border-brand-500 transition duration-300">
+              <option value="">Any Transmission</option>
+              <option value="Automatic">Automatic</option>
+              <option value="Manual">Manual</option>
+              <option value="Dual-Clutch">Dual-Clutch</option>
+              <option value="Single-Speed Direct">Single-Speed Direct</option>
+            </select>
+          </div>
+
+          <!-- Year select -->
+          <div class="space-y-2">
+            <label class="text-xs text-zinc-400 font-bold uppercase tracking-wider">Year</label>
+            <select id="filter-year" class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white outline-none focus:border-brand-500 transition duration-300">
+              <option value="">Any Year</option>
+              <option value="2027">2027</option>
+              <option value="2026">2026</option>
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+            </select>
+          </div>
+
+        </aside>
+
+        <!-- CATALOG DISPLAY (SORTING CONTROLS + CARS GRID + PAGINATION) -->
+        <div class="lg:col-span-3 space-y-8">
+          
+          <!-- Catalog Stats & Sorting -->
+          <div class="flex items-center justify-between bg-white/5 border border-white/10 rounded-2xl px-6 py-4 glass text-sm">
+            <div class="font-medium text-zinc-400">
+              Showing <span id="cars-count-span" class="text-white font-bold">0</span> vehicles
+            </div>
+            <div class="flex items-center gap-3">
+              <label for="sort-select" class="text-xs text-zinc-500 font-bold uppercase hidden sm:block">Sort By</label>
+              <select id="sort-select" class="bg-zinc-900 border border-white/10 rounded-xl px-4 py-2 text-xs text-white outline-none focus:border-brand-500 cursor-pointer">
+                <option value="newest">Newest First</option>
+                <option value="oldest">Oldest First</option>
+                <option value="highest-price">Price: High to Low</option>
+                <option value="lowest-price">Price: Low to High</option>
+                <option value="highest-rating">Rating: High to Low</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Cars Grid -->
+          <div id="catalog-cars-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Loading -->
+          </div>
+
+          <!-- Pagination -->
+          <div id="catalog-pagination" class="flex justify-center items-center gap-2 pt-6">
+            <!-- Dynamic pages -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- MOBILE FILTER SLIDE-OUT PANEL -->
+  <div id="mobile-filter-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex justify-end transform translate-x-full transition-transform duration-300 md:hidden">
+    <div class="w-full max-w-sm bg-zinc-950 border-l border-white/15 h-full p-8 flex flex-col shadow-2xl overflow-y-auto">
+      <div class="flex justify-between items-center pb-6 border-b border-white/10 mb-6">
+        <h3 class="font-black text-xl text-white">Filter Catalog</h3>
+        <button id="close-mobile-filters" class="p-2 text-zinc-400 hover:text-white transition">&times;</button>
+      </div>
+
+      <!-- Inside Mobile Filters (Cloned contents) -->
+      <div id="mobile-filter-container" class="space-y-6 flex-grow">
+        <!-- Replaced dynamically with cloned sidebar contents -->
+      </div>
+      
+      <div class="pt-6 border-t border-white/10 mt-6 flex gap-4">
+        <button id="reset-mobile-filters" class="flex-1 py-3.5 rounded-xl border border-white/10 font-bold text-xs text-zinc-400 hover:text-white transition">
+          Clear
+        </button>
+        <button id="apply-mobile-filters" class="flex-1 py-3.5 rounded-xl bg-brand-600 font-bold text-xs hover:bg-brand-500 transition">
+          Apply Filters
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div id="footer-container"></div>
+
+  <!-- SCRIPTS -->
+  <script type="module" src="/assets/js/common.js"></script>
+  <script type="module">
+    import { CarService } from './services/cars.service.js';
+    import { BrandService } from './services/brands.service.js';
+    import { FavoriteService } from './services/favorites.service.js';
+    import { CompareService } from './services/compare.service.js';
+    import { formatPrice, getRatingStars } from './assets/js/utils.js';
+
+    let currentFilters = {};
+    let currentSort = 'newest';
+    let currentPage = 1;
+    const itemsPerPage = 9;
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      // 1. Populating Dropdowns dynamically
+      try {
+        const brands = await BrandService.getAllBrands();
+        const brandSelect = document.getElementById('filter-brand');
+        brandSelect.innerHTML += brands.map(b => `<option value="${b.name}">${b.name}</option>`).join('');
+
+        const categories = await CarService.getCategories();
+        const catSelect = document.getElementById('filter-category');
+        catSelect.innerHTML += categories.map(c => `<option value="${c.name}">${c.name}</option>`).join('');
+      } catch (e) {
+        console.error('Failed to populate dropdown inputs:', e);
+      }
+
+      // 2. Set event listeners for filters
+      const searchInput = document.getElementById('filter-search');
+      const brandSelect = document.getElementById('filter-brand');
+      const catSelect = document.getElementById('filter-category');
+      const priceSlider = document.getElementById('filter-price');
+      const priceValue = document.getElementById('price-slider-value');
+      const fuelSelect = document.getElementById('filter-fuel');
+      const transSelect = document.getElementById('filter-transmission');
+      const yearSelect = document.getElementById('filter-year');
+      const sortSelect = document.getElementById('sort-select');
+
+      const triggerReload = () => {
+        currentPage = 1;
+        fetchAndRenderCars();
+      };
+
+      // Search (with simple input monitoring)
+      searchInput.addEventListener('input', () => {
+        currentFilters.search = searchInput.value;
+        triggerReload();
+      });
+
+      brandSelect.addEventListener('change', () => {
+        currentFilters.brand = brandSelect.value;
+        triggerReload();
+      });
+
+      catSelect.addEventListener('change', () => {
+        currentFilters.category = catSelect.value;
+        triggerReload();
+      });
+
+      priceSlider.addEventListener('input', () => {
+        priceValue.textContent = formatPrice(priceSlider.value);
+        currentFilters.maxPrice = parseInt(priceSlider.value);
+        triggerReload();
+      });
+
+      fuelSelect.addEventListener('change', () => {
+        currentFilters.fuelType = fuelSelect.value;
+        triggerReload();
+      });
+
+      transSelect.addEventListener('change', () => {
+        currentFilters.transmission = transSelect.value;
+        triggerReload();
+      });
+
+      yearSelect.addEventListener('change', () => {
+        currentFilters.maxYear = yearSelect.value ? parseInt(yearSelect.value) : null;
+        currentFilters.minYear = yearSelect.value ? parseInt(yearSelect.value) : null;
+        triggerReload();
+      });
+
+      sortSelect.addEventListener('change', () => {
+        currentSort = sortSelect.value;
+        triggerReload();
+      });
+
+      // Clear all filters
+      document.getElementById('reset-filters').addEventListener('click', () => {
+        searchInput.value = '';
+        brandSelect.value = '';
+        catSelect.value = '';
+        priceSlider.value = 350000;
+        priceValue.textContent = formatPrice(350000);
+        fuelSelect.value = '';
+        transSelect.value = '';
+        yearSelect.value = '';
+        currentFilters = {};
+        triggerReload();
+      });
+
+      // Mobile filters modal behavior
+      const mobileModal = document.getElementById('mobile-filter-modal');
+      const openBtn = document.getElementById('toggle-mobile-filters');
+      const closeBtn = document.getElementById('close-mobile-filters');
+      const applyBtn = document.getElementById('apply-mobile-filters');
+      const resetMobileBtn = document.getElementById('reset-mobile-filters');
+
+      openBtn.addEventListener('click', () => {
+        // Clone sidebar contents to mobile container if not loaded yet
+        const mobileContainer = document.getElementById('mobile-filter-container');
+        if (mobileContainer.children.length === 0) {
+          const sidebar = document.getElementById('filter-sidebar');
+          const clonedNodes = sidebar.cloneNode(true);
+          clonedNodes.id = 'cloned-filter-sidebar';
+          clonedNodes.className = 'space-y-6';
+          
+          // Remove border title clear button
+          clonedNodes.querySelector('.pb-4').remove();
+          mobileContainer.appendChild(clonedNodes);
+
+          // Re-bind listeners for cloned items
+          const searchMob = mobileContainer.querySelector('#filter-search');
+          const brandMob = mobileContainer.querySelector('#filter-brand');
+          const catMob = mobileContainer.querySelector('#filter-category');
+          const priceMob = mobileContainer.querySelector('#filter-price');
+          const priceValMob = mobileContainer.querySelector('#price-slider-value');
+          const fuelMob = mobileContainer.querySelector('#filter-fuel');
+          const transMob = mobileContainer.querySelector('#filter-transmission');
+          const yearMob = mobileContainer.querySelector('#filter-year');
+
+          // Sync current states
+          searchMob.value = searchInput.value;
+          brandMob.value = brandSelect.value;
+          catMob.value = catSelect.value;
+          priceMob.value = priceSlider.value;
+          priceValMob.textContent = formatPrice(priceSlider.value);
+          fuelMob.value = fuelSelect.value;
+          transMob.value = transSelect.value;
+          yearMob.value = yearSelect.value;
+
+          priceMob.addEventListener('input', () => {
+            priceValMob.textContent = formatPrice(priceMob.value);
+          });
+        }
+        mobileModal.classList.remove('translate-x-full');
+      });
+
+      closeBtn.addEventListener('click', () => {
+        mobileModal.classList.add('translate-x-full');
+      });
+
+      applyBtn.addEventListener('click', () => {
+        const mobileContainer = document.getElementById('mobile-filter-container');
+        // Retrieve values and apply them to desktop inputs (acts as main state)
+        searchInput.value = mobileContainer.querySelector('#filter-search').value;
+        brandSelect.value = mobileContainer.querySelector('#filter-brand').value;
+        catSelect.value = mobileContainer.querySelector('#filter-category').value;
+        priceSlider.value = mobileContainer.querySelector('#filter-price').value;
+        priceValue.textContent = formatPrice(priceSlider.value);
+        fuelSelect.value = mobileContainer.querySelector('#filter-fuel').value;
+        transSelect.value = mobileContainer.querySelector('#filter-transmission').value;
+        yearSelect.value = mobileContainer.querySelector('#filter-year').value;
+
+        // Apply filters
+        currentFilters = {
+          search: searchInput.value,
+          brand: brandSelect.value,
+          category: catSelect.value,
+          maxPrice: parseInt(priceSlider.value),
+          fuelType: fuelSelect.value,
+          transmission: transSelect.value,
+          minYear: yearSelect.value ? parseInt(yearSelect.value) : null,
+          maxYear: yearSelect.value ? parseInt(yearSelect.value) : null,
+        };
+
+        triggerReload();
+        mobileModal.classList.add('translate-x-full');
+      });
+
+      resetMobileBtn.addEventListener('click', () => {
+        const mobileContainer = document.getElementById('mobile-filter-container');
+        mobileContainer.querySelector('#filter-search').value = '';
+        mobileContainer.querySelector('#filter-brand').value = '';
+        mobileContainer.querySelector('#filter-category').value = '';
+        mobileContainer.querySelector('#filter-price').value = 350000;
+        mobileContainer.querySelector('#price-slider-value').textContent = formatPrice(350000);
+        mobileContainer.querySelector('#filter-fuel').value = '';
+        mobileContainer.querySelector('#filter-transmission').value = '';
+        mobileContainer.querySelector('#filter-year').value = '';
+      });
+
+      // Initial Fetch
+      fetchAndRenderCars();
+    });
+
+    async function fetchAndRenderCars() {
+      const grid = document.getElementById('catalog-cars-grid');
+      const countSpan = document.getElementById('cars-count-span');
+      const paginationDiv = document.getElementById('catalog-pagination');
+
+      grid.innerHTML = `
+        <div class="col-span-full py-12 flex flex-col items-center justify-center">
+          <div class="loader-spinner mb-4"></div>
+          <p class="text-zinc-500 text-sm">Searching inventory...</p>
+        </div>
+      `;
+
+      try {
+        const { cars, total, page, pages } = await CarService.getCars(currentFilters, currentSort, currentPage, itemsPerPage);
+        countSpan.textContent = total;
+
+        if (cars.length === 0) {
+          grid.innerHTML = `
+            <div class="col-span-full py-16 text-center glass border border-white/5 rounded-3xl">
+              <svg class="w-12 h-12 text-zinc-600 mx-auto mb-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+              </svg>
+              <h3 class="font-bold text-white text-lg">No vehicles found</h3>
+              <p class="text-zinc-500 text-sm mt-1 max-w-sm mx-auto">Adjust your pricing slider, select a different manufacturer or change parameters.</p>
+            </div>
+          `;
+          paginationDiv.innerHTML = '';
+          return;
+        }
+
+        // Render Cars
+        grid.innerHTML = cars.map(car => {
+          const isFav = FavoriteService.isFavorite(car.id);
+          const inComp = CompareService.isInCompare(car.id);
+          return `
+            <div class="glass border border-white/10 rounded-3xl overflow-hidden group hover:scale-[1.01] transition duration-300 flex flex-col relative h-full">
+              
+              <!-- Image Wrapper -->
+              <div class="relative overflow-hidden aspect-[16/10]">
+                <img src="${car.images[0]}" alt="${car.name}" 
+                     class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                
+                <!-- Category Badge -->
+                <div class="absolute top-4 left-4">
+                  <span class="px-3 py-1 text-[10px] font-bold tracking-wider uppercase bg-brand-600/80 border border-brand-500/30 rounded-full backdrop-blur-md">
+                    ${car.category}
+                  </span>
+                </div>
+
+                <!-- Actions -->
+                <div class="absolute top-4 right-4 flex gap-2">
+                  <button class="fav-toggle w-9 h-9 rounded-full glass flex items-center justify-center text-zinc-300 hover:text-white transition" 
+                          data-id="${car.id}" title="${isFav ? 'Remove from favorites' : 'Add to favorites'}">
+                    <svg class="w-4 h-4 ${isFav ? 'fill-rose-500 text-rose-500' : 'stroke-current'}" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                    </svg>
+                  </button>
+                  <button class="compare-toggle w-9 h-9 rounded-full glass flex items-center justify-center text-zinc-300 hover:text-white transition" 
+                          data-id="${car.id}" title="${inComp ? 'Remove from comparison' : 'Add to comparison'}">
+                    <svg class="w-4 h-4 ${inComp ? 'text-brand-400 fill-brand-500/20' : 'stroke-current'}" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Content details -->
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex justify-between items-start gap-2 mb-1">
+                  <span class="text-xs text-zinc-500 font-bold uppercase tracking-wider">${car.brand}</span>
+                  <span class="text-xs text-zinc-400 font-semibold">${car.year}</span>
+                </div>
+                
+                <a href="car-details.html?id=${car.id}" class="font-black text-xl text-white hover:text-brand-400 transition leading-tight truncate mb-3">
+                  ${car.name}
+                </a>
+
+                <!-- Specifications overview -->
+                <div class="grid grid-cols-2 gap-y-3 gap-x-2 py-4 border-y border-white/5 my-4 text-xs text-zinc-400">
+                  <div class="flex items-center gap-1.5">
+                    <span>⚡ Power:</span>
+                    <strong class="text-white">${car.horsepower} HP</strong>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span>🏁 0-100:</span>
+                    <strong class="text-white">${car.acceleration}s</strong>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span>🔋 Range:</span>
+                    <strong class="text-white">${car.rangeKm ? `${car.rangeKm} km` : 'N/A'}</strong>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span>⛽ Fuel:</span>
+                    <strong class="text-white">${car.fuelType}</strong>
+                  </div>
+                </div>
+
+                <!-- Footer Pricing & Rating -->
+                <div class="flex items-center justify-between mt-auto pt-2">
+                  <div class="text-sm font-black text-brand-400 text-lg">
+                    ${formatPrice(car.price)}
+                  </div>
+                  <div>
+                    ${getRatingStars(car.rating)}
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          `;
+        }).join('');
+
+        // Bind events on cards
+        grid.querySelectorAll('.fav-toggle').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const id = btn.getAttribute('data-id');
+            const active = FavoriteService.toggleFavorite(id);
+            const icon = btn.querySelector('svg');
+            if (active) {
+              icon.classList.add('fill-rose-500', 'text-rose-500');
+              btn.title = 'Remove from favorites';
+            } else {
+              icon.classList.remove('fill-rose-500', 'text-rose-500');
+              btn.title = 'Add to favorites';
+            }
+          });
+        });
+
+        grid.querySelectorAll('.compare-toggle').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const id = btn.getAttribute('data-id');
+            const { inCompare, message } = CompareService.toggleCompare(id);
+            
+            if (message) {
+              alert(message);
+            }
+            const icon = btn.querySelector('svg');
+            if (inCompare) {
+              icon.classList.add('text-brand-400', 'fill-brand-500/20');
+              btn.title = 'Remove from comparison';
+            } else {
+              icon.classList.remove('text-brand-400', 'fill-brand-500/20');
+              btn.title = 'Add to comparison';
+            }
+          });
+        });
+
+        // 3. Render Pagination
+        renderPagination(pages, page);
+
+      } catch (e) {
+        console.error('Cars catalog load error:', e);
+        grid.innerHTML = `<p class="col-span-full text-center text-rose-500 py-12">Failed to load cars from inventory database.</p>`;
+      }
+    }
+
+    function renderPagination(totalPages, currentPageNum) {
+      const paginationDiv = document.getElementById('catalog-pagination');
+      if (totalPages <= 1) {
+        paginationDiv.innerHTML = '';
+        return;
+      }
+
+      let html = '';
+      // Prev Button
+      html += `
+        <button class="px-4 py-2.5 rounded-xl border border-white/10 text-xs font-bold transition hover:bg-white/5 disabled:opacity-30 disabled:hover:bg-transparent" 
+                ${currentPageNum === 1 ? 'disabled' : ''} onclick="changePage(${currentPageNum - 1})">
+          Prev
+        </button>
+      `;
+
+      // Page numbers
+      for (let i = 1; i <= totalPages; i++) {
+        if (i === 1 || i === totalPages || (i >= currentPageNum - 1 && i <= currentPageNum + 1)) {
+          html += `
+            <button class="w-10 h-10 rounded-xl border ${i === currentPageNum ? 'bg-brand-600 border-brand-500 text-white' : 'border-white/10 text-zinc-400 hover:bg-white/5'} text-xs font-bold transition" 
+                    onclick="changePage(${i})">
+              ${i}
+            </button>
+          `;
+        } else if (i === currentPageNum - 2 || i === currentPageNum + 2) {
+          html += `<span class="text-zinc-600 text-xs px-1">...</span>`;
+        }
+      }
+
+      // Next Button
+      html += `
+        <button class="px-4 py-2.5 rounded-xl border border-white/10 text-xs font-bold transition hover:bg-white/5 disabled:opacity-30 disabled:hover:bg-transparent" 
+                ${currentPageNum === totalPages ? 'disabled' : ''} onclick="changePage(${currentPageNum + 1})">
+          Next
+        </button>
+      `;
+
+      paginationDiv.innerHTML = html;
+    }
+
+    // Expose page change function globally so inline onclick handlers work
+    window.changePage = (pageNum) => {
+      currentPage = pageNum;
+      fetchAndRenderCars();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+</body>
+</html>
