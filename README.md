@@ -3,6 +3,12 @@
 PD Cars is a modern automotive web interface for exploring premium cars, brands, articles, reviews, and news. Built with **HTML + Tailwind CSS + Vanilla JavaScript**, and designed to be fully compatible with future external APIs.
 
 ---
+# 🎥 Preview
+
+[![Watch the Video](https://img.youtube.com/vi/eaQ1qSiWrxM/maxresdefault.jpg)](https://youtu.be/eaQ1qSiWrxM)
+
+
+---
 
 ## ✨ Features
 
@@ -46,9 +52,9 @@ This project is designed to easily connect with external APIs in the future with
 
 ---
 
-## 🎥 Watch Demo
+### ⭐ Star Growth
 
-👉[Watch the full web app demo on YouTube](https://youtu.be/eaQ1qSiWrxM?si=LQsGOJOaLcojhePL)
+[![Star History Chart](https://api.star-history.com/svg?repos=abdellahaarab/pdCars&type=Date&theme=dark)](https://star-history.com/#abdellahaarab/pdCars&Date)
 
 ---
 
